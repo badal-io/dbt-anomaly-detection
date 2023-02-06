@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: derived_web_3month
+    schema: dbt_rhashemi
+    tables:
+      - name: aggregations_main
