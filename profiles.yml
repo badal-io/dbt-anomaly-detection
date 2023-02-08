@@ -5,7 +5,6 @@ anomaly_detection:
       type: bigquery
       project: ld-snowplow
       dataset: snowplow
-      method: service-account
-      keyfile: ld-snowplow-747d40fb0718.json
+      method: oauth
       threads: 4
 
