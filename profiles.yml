@@ -7,4 +7,3 @@ anomaly_detection:
       dataset: snowplow
       method: oauth
       threads: 4
-
