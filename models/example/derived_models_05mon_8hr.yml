@@ -1,0 +1,4 @@
+version: 2
+
+models:
+  - name: derived_models_05mon_8hr

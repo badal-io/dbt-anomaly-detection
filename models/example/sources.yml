@@ -1,7 +1,12 @@
 version: 2
 
 sources:
-  - name: derived_web_3month
+  - name: derived_app_event_1
     schema: dbt_rhashemi
     tables:
-      - name: aggregations_main
+      - name: web_purchase_exported
+
+  - name: derived_app_event_2
+    schema: dbt_rhashemi
+    tables:
+      - name: pco_web_apply_filter_exported

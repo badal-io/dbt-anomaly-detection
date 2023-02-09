@@ -12,6 +12,11 @@ profile: 'anomaly_detection'
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
+vars:
+  anomaly_detection_aggregation_levels: [4, 8, 12, 24]
+  anomaly_detection_prob_thresholds : [0.9999, 0.999999]
+  anomaly_detection_horizon: 120
+  
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]

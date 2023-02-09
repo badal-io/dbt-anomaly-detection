@@ -1,0 +1,4 @@
+version: 2
+
+models:
+  - name: derived_alerts_fired_automation_dbt

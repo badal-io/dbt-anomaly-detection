@@ -1,0 +1,4 @@
+version: 2
+
+models:
+  - name: derived_models_1mon_24hr

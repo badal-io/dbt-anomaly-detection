@@ -1,0 +1,4 @@
+version: 2
+
+models:
+  - name: filtered_model_features_dbt
