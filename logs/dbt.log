@@ -1054,3 +1054,941 @@ FROM `ld-snowplow`.`dbt_rhashemi`.`aggregations_main`
 [0m16:56:24.873101 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 [0m16:56:24.873463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f9e3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10612cfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10612cca0>]}
 [0m16:56:24.873701 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-09 17:21:45.404641 | bf5574ed-3cd2-418e-935d-603750e720cb ==============================
+[0m17:21:45.404647 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:21:45.404976 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m17:21:45.405043 [debug] [MainThread]: Tracking: tracking
+[0m17:21:45.415165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105db6460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105db6400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105db64f0>]}
+[0m17:21:45.635171 [debug] [MainThread]: Executing "git --help"
+[0m17:21:45.640572 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:21:45.640990 [debug] [MainThread]: STDERR: "b''"
+[0m17:21:45.645035 [debug] [MainThread]: Acquiring new bigquery connection "debug"
+[0m17:21:45.645763 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:21:46.442993 [debug] [MainThread]: On debug: select 1 as id
+[0m17:21:47.970621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105db6ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a45370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a45a30>]}
+[0m17:21:47.972122 [debug] [MainThread]: Flushing usage events
+[0m17:21:48.431917 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-02-09 17:22:00.271003 | 062828f7-de68-4bcd-869c-dd515e1684f6 ==============================
+[0m17:22:00.271030 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:22:00.271399 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['dbt_first_model'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:22:00.271495 [debug] [MainThread]: Tracking: tracking
+[0m17:22:00.278575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f49a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f498e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f49910>]}
+[0m17:22:00.279924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f49910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f498e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f497c0>]}
+[0m17:22:00.280046 [debug] [MainThread]: Flushing usage events
+[0m17:22:00.645102 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 2 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m17:22:00.647542 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 451, in run
+    self._runtime_initialize()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 159, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 81, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/parser/manifest.py", line 216, in get_full_manifest
+    projects = config.load_dependencies()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 327, in load_dependencies
+    raise_compiler_error(
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/exceptions.py", line 445, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error
+  dbt found 2 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+
+
+
+============================== 2023-02-09 17:22:11.132220 | 908b361e-1b62-462d-9cda-1c5895b8bc3e ==============================
+[0m17:22:11.132226 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:22:11.132428 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m17:22:11.132493 [debug] [MainThread]: Tracking: tracking
+[0m17:22:11.139024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10504f5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050719d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105071760>]}
+[0m17:22:11.141182 [debug] [MainThread]: Set downloads directory='/var/folders/2b/s3pxyycs63s1dl1mn2p9mnq40000gn/T/dbt-downloads-qmcl2lyr'
+[0m17:22:11.141585 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:22:11.484254 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:22:11.485081 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/kristeligt-dagblad/dbt_ml.json
+[0m17:22:11.765796 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/kristeligt-dagblad/dbt_ml.json 200
+[0m17:22:11.769456 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:22:12.037201 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:22:12.088120 [info ] [MainThread]: Installing kristeligt-dagblad/dbt_ml
+[0m17:22:12.441256 [info ] [MainThread]:   Installed from version 0.5.2
+[0m17:22:12.441696 [info ] [MainThread]:   Up to date!
+[0m17:22:12.442084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '908b361e-1b62-462d-9cda-1c5895b8bc3e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050893d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105089670>]}
+[0m17:22:12.442426 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:22:12.946003 [info ] [MainThread]:   Installed from version 0.8.6
+[0m17:22:12.946200 [info ] [MainThread]:   Updated version available: 1.0.0
+[0m17:22:12.946356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '908b361e-1b62-462d-9cda-1c5895b8bc3e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050d28e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050d27c0>]}
+[0m17:22:12.946508 [info ] [MainThread]: 
+[0m17:22:12.946666 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m17:22:12.947373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10503ac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050717c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10504f5e0>]}
+[0m17:22:12.947503 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-09 17:22:55.724894 | 69863980-de92-453b-a307-eb1dd24d7908 ==============================
+[0m17:22:55.724900 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:22:55.725281 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m17:22:55.725357 [debug] [MainThread]: Tracking: tracking
+[0m17:22:55.733308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a5c370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a5c160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a5c610>]}
+[0m17:22:55.734669 [debug] [MainThread]: Set downloads directory='/var/folders/2b/s3pxyycs63s1dl1mn2p9mnq40000gn/T/dbt-downloads-_p9iy97u'
+[0m17:22:55.735062 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:22:56.047898 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:22:56.048622 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/kristeligt-dagblad/dbt_ml.json
+[0m17:22:56.169634 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/kristeligt-dagblad/dbt_ml.json 200
+[0m17:22:56.172857 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:22:56.449980 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:22:56.497233 [info ] [MainThread]: Installing kristeligt-dagblad/dbt_ml
+[0m17:22:57.051638 [info ] [MainThread]:   Installed from version 0.5.2
+[0m17:22:57.052156 [info ] [MainThread]:   Up to date!
+[0m17:22:57.052533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '69863980-de92-453b-a307-eb1dd24d7908', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112aed490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112aed4c0>]}
+[0m17:22:57.052855 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:22:57.554139 [info ] [MainThread]:   Installed from version 1.0.0
+[0m17:22:57.554345 [info ] [MainThread]:   Up to date!
+[0m17:22:57.554506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '69863980-de92-453b-a307-eb1dd24d7908', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a49730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a49940>]}
+[0m17:22:57.555038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1128f7d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a49c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a49eb0>]}
+[0m17:22:57.555182 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-09 17:23:05.814226 | c35c9e42-d46f-462e-b5c1-80e99ea24454 ==============================
+[0m17:23:05.814249 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:23:05.814800 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['dbt_first_model'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:23:05.814893 [debug] [MainThread]: Tracking: tracking
+[0m17:23:05.822345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057c5160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057c5760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057c5880>]}
+[0m17:23:05.832954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105813970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105813100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058134c0>]}
+[0m17:23:05.833148 [debug] [MainThread]: Flushing usage events
+[0m17:23:06.310955 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.2.1
+      Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils
+[0m17:23:06.313319 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 354, in load_projects
+    project = self.new_project(str(path))
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 140, in new_project
+    project = Project.from_project_root(
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 653, in from_project_root
+    return partial.render(renderer)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 286, in render
+    return self.create_project(rendered)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 316, in create_project
+    dbt_version = _get_required_version(
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 231, in _get_required_version
+    validate_version(dbt_version, project_dict["name"])
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 208, in validate_version
+    raise DbtProjectError(msg)
+dbt.exceptions.DbtProjectError: Runtime Error
+  This version of dbt is not supported with the 'dbt_utils' package.
+    Installed version of dbt: =1.2.1
+    Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+  Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+  
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 451, in run
+    self._runtime_initialize()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 159, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 81, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/parser/manifest.py", line 216, in get_full_manifest
+    projects = config.load_dependencies()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 335, in load_dependencies
+    for project_name, project in self.load_projects(project_paths):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 356, in load_projects
+    raise DbtProjectError(
+dbt.exceptions.DbtProjectError: Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.2.1
+      Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils
+
+
+
+============================== 2023-02-09 17:23:44.057676 | b615d3da-a252-43f7-869e-c04d98212ccd ==============================
+[0m17:23:44.057695 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:23:44.058066 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['dbt_first_model'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:23:44.058186 [debug] [MainThread]: Tracking: tracking
+[0m17:23:44.066291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10978dbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10978d730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10978dac0>]}
+[0m17:23:44.075618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10978d7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10977a340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097e2ca0>]}
+[0m17:23:44.075801 [debug] [MainThread]: Flushing usage events
+[0m17:23:44.451756 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.2.1
+      Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils
+[0m17:23:44.454062 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 354, in load_projects
+    project = self.new_project(str(path))
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 140, in new_project
+    project = Project.from_project_root(
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 653, in from_project_root
+    return partial.render(renderer)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 286, in render
+    return self.create_project(rendered)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 316, in create_project
+    dbt_version = _get_required_version(
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 231, in _get_required_version
+    validate_version(dbt_version, project_dict["name"])
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 208, in validate_version
+    raise DbtProjectError(msg)
+dbt.exceptions.DbtProjectError: Runtime Error
+  This version of dbt is not supported with the 'dbt_utils' package.
+    Installed version of dbt: =1.2.1
+    Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+  Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+  
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 451, in run
+    self._runtime_initialize()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 159, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 81, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/parser/manifest.py", line 216, in get_full_manifest
+    projects = config.load_dependencies()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 335, in load_dependencies
+    for project_name, project in self.load_projects(project_paths):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 356, in load_projects
+    raise DbtProjectError(
+dbt.exceptions.DbtProjectError: Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.2.1
+      Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils
+
+
+
+============================== 2023-02-09 17:25:21.240198 | ba7db401-342b-48fc-be05-c0d9744d5ce1 ==============================
+[0m17:25:21.240204 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:25:21.240412 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m17:25:21.240481 [debug] [MainThread]: Tracking: tracking
+[0m17:25:21.248137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106916a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106916bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106916be0>]}
+[0m17:25:21.250039 [debug] [MainThread]: Set downloads directory='/var/folders/2b/s3pxyycs63s1dl1mn2p9mnq40000gn/T/dbt-downloads-q35xwjzd'
+[0m17:25:21.250519 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:25:21.582986 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:25:21.583698 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/kristeligt-dagblad/dbt_ml.json
+[0m17:25:21.851285 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/kristeligt-dagblad/dbt_ml.json 200
+[0m17:25:21.856178 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:25:22.144660 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:25:22.194623 [info ] [MainThread]: Installing kristeligt-dagblad/dbt_ml
+[0m17:25:22.584258 [info ] [MainThread]:   Installed from version 0.5.2
+[0m17:25:22.584708 [info ] [MainThread]:   Up to date!
+[0m17:25:22.585074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'ba7db401-342b-48fc-be05-c0d9744d5ce1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069164f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069164c0>]}
+[0m17:25:22.585370 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:25:23.040005 [info ] [MainThread]:   Installed from version 1.0.0
+[0m17:25:23.040228 [info ] [MainThread]:   Up to date!
+[0m17:25:23.040404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'ba7db401-342b-48fc-be05-c0d9744d5ce1', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106964910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106964070>]}
+[0m17:25:23.041042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106836790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068b72e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106916310>]}
+[0m17:25:23.041181 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-09 17:25:46.259581 | 45b2c188-e476-4694-b44c-8d456ac2f934 ==============================
+[0m17:25:46.259586 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:25:46.259778 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m17:25:46.259843 [debug] [MainThread]: Tracking: tracking
+[0m17:25:46.269181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110cb6460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110cb6400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110cb64f0>]}
+[0m17:25:46.445785 [debug] [MainThread]: Executing "git --help"
+[0m17:25:46.451723 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:25:46.452232 [debug] [MainThread]: STDERR: "b''"
+[0m17:25:46.456833 [debug] [MainThread]: Acquiring new bigquery connection "debug"
+[0m17:25:46.457596 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:25:46.838817 [debug] [MainThread]: On debug: select 1 as id
+[0m17:25:48.130613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064ad550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a45cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a458e0>]}
+[0m17:25:48.131477 [debug] [MainThread]: Flushing usage events
+[0m17:25:48.492966 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-02-09 17:25:52.659119 | b5cbbad3-83e3-4c88-ad58-6f0af4712778 ==============================
+[0m17:25:52.659159 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:25:52.659569 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:25:52.659657 [debug] [MainThread]: Tracking: tracking
+[0m17:25:52.668689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108626d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108626490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108626130>]}
+[0m17:25:52.679784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10862b2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10862b910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10868edc0>]}
+[0m17:25:52.679970 [debug] [MainThread]: Flushing usage events
+[0m17:25:53.038658 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.2.1
+      Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils
+[0m17:25:53.040739 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 354, in load_projects
+    project = self.new_project(str(path))
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 140, in new_project
+    project = Project.from_project_root(
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 653, in from_project_root
+    return partial.render(renderer)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 286, in render
+    return self.create_project(rendered)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 316, in create_project
+    dbt_version = _get_required_version(
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 231, in _get_required_version
+    validate_version(dbt_version, project_dict["name"])
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 208, in validate_version
+    raise DbtProjectError(msg)
+dbt.exceptions.DbtProjectError: Runtime Error
+  This version of dbt is not supported with the 'dbt_utils' package.
+    Installed version of dbt: =1.2.1
+    Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+  Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+  
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 451, in run
+    self._runtime_initialize()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 159, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 81, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/parser/manifest.py", line 216, in get_full_manifest
+    projects = config.load_dependencies()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 335, in load_dependencies
+    for project_name, project in self.load_projects(project_paths):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 356, in load_projects
+    raise DbtProjectError(
+dbt.exceptions.DbtProjectError: Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.2.1
+      Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils
+
+
+
+============================== 2023-02-09 17:27:01.873368 | 19e3e8b3-4ee3-4a12-a4ca-4106846ca4f7 ==============================
+[0m17:27:01.873419 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:27:01.873845 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:27:01.873951 [debug] [MainThread]: Tracking: tracking
+[0m17:27:01.881590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e60b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e60370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e60280>]}
+[0m17:27:01.909619 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:27:01.909761 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:27:01.912880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '19e3e8b3-4ee3-4a12-a4ca-4106846ca4f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ff70d0>]}
+[0m17:27:01.916783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '19e3e8b3-4ee3-4a12-a4ca-4106846ca4f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f50970>]}
+[0m17:27:01.916922 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 285 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m17:27:01.917049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '19e3e8b3-4ee3-4a12-a4ca-4106846ca4f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f509d0>]}
+[0m17:27:01.917768 [info ] [MainThread]: 
+[0m17:27:01.917998 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m17:27:01.918409 [debug] [ThreadPool]: Acquiring new bigquery connection "list_ld-snowplow"
+[0m17:27:01.918557 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:27:03.125082 [debug] [ThreadPool]: Acquiring new bigquery connection "list_ld-snowplow_dbt_anomaly_detection"
+[0m17:27:03.125524 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:27:03.514539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '19e3e8b3-4ee3-4a12-a4ca-4106846ca4f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109e62580>]}
+[0m17:27:03.515909 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:27:03.516345 [info ] [MainThread]: 
+[0m17:27:03.523661 [debug] [Thread-1  ]: Began running node model.anomaly_detection.my_first_dbt_model
+[0m17:27:03.524138 [info ] [Thread-1  ]: 1 of 1 START table model dbt_anomaly_detection.my_first_dbt_model .............. [RUN]
+[0m17:27:03.524696 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.my_first_dbt_model"
+[0m17:27:03.524869 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.my_first_dbt_model
+[0m17:27:03.525192 [debug] [Thread-1  ]: Compiling model.anomaly_detection.my_first_dbt_model
+[0m17:27:03.530035 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.my_first_dbt_model"
+[0m17:27:03.531241 [debug] [Thread-1  ]: finished collecting timing info
+[0m17:27:03.531451 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.my_first_dbt_model
+[0m17:27:03.544550 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m17:27:03.990613 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.my_first_dbt_model"
+[0m17:27:03.991582 [debug] [Thread-1  ]: On model.anomaly_detection.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.my_first_dbt_model"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+SELECT *
+FROM `ld-snowplow`.`dbt_rhashemi`.`aggregations_main`
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+  
+[0m17:27:06.334643 [debug] [Thread-1  ]: finished collecting timing info
+[0m17:27:06.335309 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '19e3e8b3-4ee3-4a12-a4ca-4106846ca4f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a8d0c10>]}
+[0m17:27:06.335683 [info ] [Thread-1  ]: 1 of 1 OK created table model dbt_anomaly_detection.my_first_dbt_model ......... [[32mCREATE TABLE (500.0 rows, 29.4 KB processed)[0m in 2.81s]
+[0m17:27:06.336092 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.my_first_dbt_model
+[0m17:27:06.337313 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m17:27:06.337686 [info ] [MainThread]: 
+[0m17:27:06.337911 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.42 seconds (4.42s).
+[0m17:27:06.338104 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:27:06.338198 [debug] [MainThread]: Connection 'model.anomaly_detection.my_first_dbt_model' was properly closed.
+[0m17:27:06.350135 [info ] [MainThread]: 
+[0m17:27:06.350358 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:27:06.350518 [info ] [MainThread]: 
+[0m17:27:06.350658 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:27:06.350880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046244f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a8d0220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a8d0160>]}
+[0m17:27:06.351028 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-09 17:27:32.116799 | 8eecc6d2-c2dc-4d35-9419-18c94f7d960b ==============================
+[0m17:27:32.116807 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:27:32.117004 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m17:27:32.117069 [debug] [MainThread]: Tracking: tracking
+[0m17:27:32.125363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046ae970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046aea90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046aeac0>]}
+[0m17:27:32.126818 [debug] [MainThread]: Set downloads directory='/var/folders/2b/s3pxyycs63s1dl1mn2p9mnq40000gn/T/dbt-downloads-493e4bpc'
+[0m17:27:32.127205 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:27:33.275505 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:27:33.276357 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/kristeligt-dagblad/dbt_ml.json
+[0m17:27:33.560081 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/kristeligt-dagblad/dbt_ml.json 200
+[0m17:27:33.563639 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:27:33.875451 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:27:33.925722 [info ] [MainThread]: Installing kristeligt-dagblad/dbt_ml
+[0m17:27:34.317926 [info ] [MainThread]:   Installed from version 0.5.2
+[0m17:27:34.318369 [info ] [MainThread]:   Up to date!
+[0m17:27:34.318764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '8eecc6d2-c2dc-4d35-9419-18c94f7d960b', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046ae1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046aefa0>]}
+[0m17:27:34.319073 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:27:34.775819 [info ] [MainThread]:   Installed from version 1.0.0
+[0m17:27:34.776033 [info ] [MainThread]:   Up to date!
+[0m17:27:34.776210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '8eecc6d2-c2dc-4d35-9419-18c94f7d960b', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046f3ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104623be0>]}
+[0m17:27:34.776797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046ae2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104648340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046f3e80>]}
+[0m17:27:34.776929 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-09 17:27:49.859360 | 4e4361d8-0aa9-4600-979d-2ed9a7b99d15 ==============================
+[0m17:27:49.859407 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:27:49.859783 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:27:49.859886 [debug] [MainThread]: Tracking: tracking
+[0m17:27:49.867880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112220a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112220130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112220100>]}
+[0m17:27:49.877054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11220cdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11220c070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11226e250>]}
+[0m17:27:49.877219 [debug] [MainThread]: Flushing usage events
+[0m17:27:50.233935 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.2.1
+      Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils
+[0m17:27:50.236910 [error] [MainThread]: Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 354, in load_projects
+    project = self.new_project(str(path))
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 140, in new_project
+    project = Project.from_project_root(
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 653, in from_project_root
+    return partial.render(renderer)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 286, in render
+    return self.create_project(rendered)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 316, in create_project
+    dbt_version = _get_required_version(
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 231, in _get_required_version
+    validate_version(dbt_version, project_dict["name"])
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/project.py", line 208, in validate_version
+    raise DbtProjectError(msg)
+dbt.exceptions.DbtProjectError: Runtime Error
+  This version of dbt is not supported with the 'dbt_utils' package.
+    Installed version of dbt: =1.2.1
+    Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+  Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+  
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 451, in run
+    self._runtime_initialize()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 159, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/task/runnable.py", line 81, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/parser/manifest.py", line 216, in get_full_manifest
+    projects = config.load_dependencies()
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 335, in load_dependencies
+    for project_name, project in self.load_projects(project_paths):
+  File "/opt/homebrew/Cellar/dbt-bigquery/1.2.0/libexec/lib/python3.9/site-packages/dbt/config/runtime.py", line 356, in load_projects
+    raise DbtProjectError(
+dbt.exceptions.DbtProjectError: Runtime Error
+  Failed to read package: Runtime Error
+    This version of dbt is not supported with the 'dbt_utils' package.
+      Installed version of dbt: =1.2.1
+      Required version of dbt for 'dbt_utils': ['>=1.3.0', '<2.0.0']
+    Check for a different version of the 'dbt_utils' package, or run dbt again with --no-version-check
+    
+  
+  Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils/dbt_project.yml
+
+Error encountered in /Users/rana/bi-dbt-anomaly-detection/dbt_packages/dbt_utils
+
+
+
+============================== 2023-02-09 17:28:30.623208 | c37117a4-3dfa-4496-b2fa-4c40ad9ccb50 ==============================
+[0m17:28:30.623214 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:28:30.623410 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m17:28:30.623477 [debug] [MainThread]: Tracking: tracking
+[0m17:28:30.632131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c369d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103bdee80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103bde520>]}
+[0m17:28:30.633342 [debug] [MainThread]: Set downloads directory='/var/folders/2b/s3pxyycs63s1dl1mn2p9mnq40000gn/T/dbt-downloads-e7e_6lwm'
+[0m17:28:30.633732 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:28:31.004730 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:28:31.005543 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/kristeligt-dagblad/dbt_ml.json
+[0m17:28:31.285003 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/kristeligt-dagblad/dbt_ml.json 200
+[0m17:28:31.289158 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:28:31.558152 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:28:31.610181 [info ] [MainThread]: Installing kristeligt-dagblad/dbt_ml
+[0m17:28:31.906482 [info ] [MainThread]:   Installed from version 0.5.2
+[0m17:28:31.906942 [info ] [MainThread]:   Up to date!
+[0m17:28:31.907319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'c37117a4-3dfa-4496-b2fa-4c40ad9ccb50', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c36c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103bde8e0>]}
+[0m17:28:31.907645 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:28:32.399083 [info ] [MainThread]:   Installed from version 0.8.6
+[0m17:28:32.399286 [info ] [MainThread]:   Updated version available: 1.0.0
+[0m17:28:32.399441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'c37117a4-3dfa-4496-b2fa-4c40ad9ccb50', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c84820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c847c0>]}
+[0m17:28:32.399585 [info ] [MainThread]: 
+[0m17:28:32.399703 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m17:28:32.400154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b8fdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103bd7130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103bd7370>]}
+[0m17:28:32.400271 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-09 17:28:37.744462 | 359e886c-899d-489f-9182-63fade666cde ==============================
+[0m17:28:37.744492 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:28:37.744846 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:28:37.744941 [debug] [MainThread]: Tracking: tracking
+[0m17:28:37.752426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d05910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d057f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d05820>]}
+[0m17:28:37.771677 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m17:28:37.771905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '359e886c-899d-489f-9182-63fade666cde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ce3cd0>]}
+[0m17:28:37.792422 [debug] [MainThread]: Parsing macros/etc.sql
+[0m17:28:37.793668 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m17:28:37.796940 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m17:28:37.808264 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+[0m17:28:37.809494 [debug] [MainThread]: Parsing macros/materializations/view.sql
+[0m17:28:37.810745 [debug] [MainThread]: Parsing macros/materializations/table.sql
+[0m17:28:37.812792 [debug] [MainThread]: Parsing macros/materializations/copy.sql
+[0m17:28:37.814033 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+[0m17:28:37.821252 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+[0m17:28:37.822141 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m17:28:37.822354 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m17:28:37.822667 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m17:28:37.822829 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m17:28:37.823080 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m17:28:37.823360 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m17:28:37.823795 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m17:28:37.824342 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m17:28:37.824569 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m17:28:37.824798 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m17:28:37.825053 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m17:28:37.825240 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m17:28:37.825850 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m17:28:37.826092 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m17:28:37.827322 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m17:28:37.829015 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m17:28:37.830005 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m17:28:37.830740 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m17:28:37.838327 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m17:28:37.844614 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m17:28:37.850367 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m17:28:37.852365 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m17:28:37.853148 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m17:28:37.853926 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m17:28:37.855886 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m17:28:37.863965 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m17:28:37.864635 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m17:28:37.868929 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m17:28:37.876301 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m17:28:37.878793 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m17:28:37.880037 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m17:28:37.882518 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m17:28:37.883073 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m17:28:37.884575 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m17:28:37.885557 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m17:28:37.888749 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m17:28:37.897556 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m17:28:37.898198 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m17:28:37.899275 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m17:28:37.899952 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m17:28:37.900340 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m17:28:37.900683 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m17:28:37.900978 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m17:28:37.901571 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m17:28:37.903520 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m17:28:37.907404 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m17:28:37.907759 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m17:28:37.908292 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m17:28:37.908702 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m17:28:37.909101 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m17:28:37.909641 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m17:28:37.909987 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m17:28:37.910433 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m17:28:37.910902 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m17:28:37.912034 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m17:28:37.912580 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m17:28:37.913051 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m17:28:37.913509 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m17:28:37.913951 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m17:28:37.914351 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m17:28:37.914819 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m17:28:37.915208 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m17:28:37.917830 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m17:28:37.918227 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m17:28:37.919007 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m17:28:37.919921 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m17:28:37.920367 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m17:28:37.921345 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m17:28:37.922486 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m17:28:37.929216 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m17:28:37.930485 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m17:28:37.936568 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m17:28:37.938525 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m17:28:37.941720 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m17:28:37.946173 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m17:28:37.947491 [debug] [MainThread]: Parsing macros/cross_db_utils/except.sql
+[0m17:28:37.947933 [debug] [MainThread]: Parsing macros/cross_db_utils/replace.sql
+[0m17:28:37.948467 [debug] [MainThread]: Parsing macros/cross_db_utils/concat.sql
+[0m17:28:37.948882 [debug] [MainThread]: Parsing macros/cross_db_utils/datatypes.sql
+[0m17:28:37.951398 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_relation.sql
+[0m17:28:37.951886 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_array_to_string.sql
+[0m17:28:37.953055 [debug] [MainThread]: Parsing macros/cross_db_utils/length.sql
+[0m17:28:37.953592 [debug] [MainThread]: Parsing macros/cross_db_utils/dateadd.sql
+[0m17:28:37.954823 [debug] [MainThread]: Parsing macros/cross_db_utils/intersect.sql
+[0m17:28:37.955255 [debug] [MainThread]: Parsing macros/cross_db_utils/escape_single_quotes.sql
+[0m17:28:37.956022 [debug] [MainThread]: Parsing macros/cross_db_utils/right.sql
+[0m17:28:37.957065 [debug] [MainThread]: Parsing macros/cross_db_utils/listagg.sql
+[0m17:28:37.961178 [debug] [MainThread]: Parsing macros/cross_db_utils/datediff.sql
+[0m17:28:37.965822 [debug] [MainThread]: Parsing macros/cross_db_utils/safe_cast.sql
+[0m17:28:37.966611 [debug] [MainThread]: Parsing macros/cross_db_utils/hash.sql
+[0m17:28:37.967195 [debug] [MainThread]: Parsing macros/cross_db_utils/cast_bool_to_text.sql
+[0m17:28:37.967794 [debug] [MainThread]: Parsing macros/cross_db_utils/identifier.sql
+[0m17:28:37.968488 [debug] [MainThread]: Parsing macros/cross_db_utils/any_value.sql
+[0m17:28:37.969017 [debug] [MainThread]: Parsing macros/cross_db_utils/position.sql
+[0m17:28:37.969676 [debug] [MainThread]: Parsing macros/cross_db_utils/literal.sql
+[0m17:28:37.970245 [debug] [MainThread]: Parsing macros/cross_db_utils/current_timestamp.sql
+[0m17:28:37.971672 [debug] [MainThread]: Parsing macros/cross_db_utils/width_bucket.sql
+[0m17:28:37.974129 [debug] [MainThread]: Parsing macros/cross_db_utils/array_concat.sql
+[0m17:28:37.974923 [debug] [MainThread]: Parsing macros/cross_db_utils/bool_or.sql
+[0m17:28:37.975643 [debug] [MainThread]: Parsing macros/cross_db_utils/last_day.sql
+[0m17:28:37.977168 [debug] [MainThread]: Parsing macros/cross_db_utils/split_part.sql
+[0m17:28:37.979934 [debug] [MainThread]: Parsing macros/cross_db_utils/date_trunc.sql
+[0m17:28:37.980561 [debug] [MainThread]: Parsing macros/cross_db_utils/array_construct.sql
+[0m17:28:37.981733 [debug] [MainThread]: Parsing macros/cross_db_utils/_is_ephemeral.sql
+[0m17:28:37.982645 [debug] [MainThread]: Parsing macros/cross_db_utils/array_append.sql
+[0m17:28:37.983541 [debug] [MainThread]: Parsing macros/materializations/insert_by_period_materialization.sql
+[0m17:28:37.995268 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+[0m17:28:37.996145 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+[0m17:28:37.997297 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+[0m17:28:37.997974 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+[0m17:28:37.998756 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+[0m17:28:37.999467 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+[0m17:28:38.000466 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+[0m17:28:38.001221 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+[0m17:28:38.001745 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+[0m17:28:38.002881 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+[0m17:28:38.003816 [debug] [MainThread]: Parsing macros/generic_tests/test_unique_where.sql
+[0m17:28:38.004428 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+[0m17:28:38.004967 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+[0m17:28:38.006238 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+[0m17:28:38.007149 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+[0m17:28:38.007935 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+[0m17:28:38.008892 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+[0m17:28:38.010219 [debug] [MainThread]: Parsing macros/generic_tests/test_not_null_where.sql
+[0m17:28:38.010833 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+[0m17:28:38.012443 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+[0m17:28:38.016801 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+[0m17:28:38.017275 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+[0m17:28:38.017791 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+[0m17:28:38.018256 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+[0m17:28:38.018761 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+[0m17:28:38.020613 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+[0m17:28:38.021369 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+[0m17:28:38.022897 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+[0m17:28:38.024797 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+[0m17:28:38.026336 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+[0m17:28:38.027063 [debug] [MainThread]: Parsing macros/sql/star.sql
+[0m17:28:38.028730 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+[0m17:28:38.032444 [debug] [MainThread]: Parsing macros/sql/union.sql
+[0m17:28:38.037817 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+[0m17:28:38.038396 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+[0m17:28:38.041646 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+[0m17:28:38.043142 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+[0m17:28:38.043832 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+[0m17:28:38.044529 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+[0m17:28:38.047507 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+[0m17:28:38.050081 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+[0m17:28:38.051953 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+[0m17:28:38.053166 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+[0m17:28:38.054165 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+[0m17:28:38.054891 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+[0m17:28:38.058913 [debug] [MainThread]: Parsing macros/predict.sql
+[0m17:28:38.059300 [debug] [MainThread]: Parsing macros/recommend.sql
+[0m17:28:38.059667 [debug] [MainThread]: Parsing macros/detect_anomalies.sql
+[0m17:28:38.059963 [debug] [MainThread]: Parsing macros/hparam.sql
+[0m17:28:38.060393 [debug] [MainThread]: Parsing macros/materializations/model.sql
+[0m17:28:38.065979 [debug] [MainThread]: Parsing macros/hooks/model_audit.sql
+[0m17:28:38.295485 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m17:28:38.345324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '359e886c-899d-489f-9182-63fade666cde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068f20d0>]}
+[0m17:28:38.350241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '359e886c-899d-489f-9182-63fade666cde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068173d0>]}
+[0m17:28:38.350374 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 540 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m17:28:38.350491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '359e886c-899d-489f-9182-63fade666cde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d05310>]}
+[0m17:28:38.351027 [info ] [MainThread]: 
+[0m17:28:38.351262 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m17:28:38.351597 [debug] [ThreadPool]: Acquiring new bigquery connection "list_ld-snowplow"
+[0m17:28:38.351702 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:28:39.651968 [debug] [ThreadPool]: Acquiring new bigquery connection "list_ld-snowplow_dbt_anomaly_detection"
+[0m17:28:39.652245 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:28:40.023124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '359e886c-899d-489f-9182-63fade666cde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068f25b0>]}
+[0m17:28:40.024448 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:28:40.024949 [info ] [MainThread]: 
+[0m17:28:40.032194 [debug] [Thread-1  ]: Began running node model.anomaly_detection.my_first_dbt_model
+[0m17:28:40.032705 [info ] [Thread-1  ]: 1 of 1 START table model dbt_anomaly_detection.my_first_dbt_model .............. [RUN]
+[0m17:28:40.033283 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.my_first_dbt_model"
+[0m17:28:40.033466 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.my_first_dbt_model
+[0m17:28:40.033740 [debug] [Thread-1  ]: Compiling model.anomaly_detection.my_first_dbt_model
+[0m17:28:40.039159 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.my_first_dbt_model"
+[0m17:28:40.039917 [debug] [Thread-1  ]: finished collecting timing info
+[0m17:28:40.040090 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.my_first_dbt_model
+[0m17:28:40.054007 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m17:28:40.520313 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.my_first_dbt_model"
+[0m17:28:40.521467 [debug] [Thread-1  ]: On model.anomaly_detection.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.my_first_dbt_model"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+SELECT *
+FROM `ld-snowplow`.`dbt_rhashemi`.`aggregations_main`
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+  
+[0m17:28:42.877615 [debug] [Thread-1  ]: finished collecting timing info
+[0m17:28:42.878356 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '359e886c-899d-489f-9182-63fade666cde', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068fdf40>]}
+[0m17:28:42.878760 [info ] [Thread-1  ]: 1 of 1 OK created table model dbt_anomaly_detection.my_first_dbt_model ......... [[32mCREATE TABLE (500.0 rows, 29.4 KB processed)[0m in 2.85s]
+[0m17:28:42.879191 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.my_first_dbt_model
+[0m17:28:42.880489 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m17:28:42.881036 [info ] [MainThread]: 
+[0m17:28:42.881280 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.53 seconds (4.53s).
+[0m17:28:42.881460 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:28:42.881553 [debug] [MainThread]: Connection 'model.anomaly_detection.my_first_dbt_model' was properly closed.
+[0m17:28:42.895973 [info ] [MainThread]: 
+[0m17:28:42.896220 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:28:42.896390 [info ] [MainThread]: 
+[0m17:28:42.896521 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:28:42.896733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1021b0550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a50be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a50f40>]}
+[0m17:28:42.896889 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-09 17:28:56.185455 | da24d81c-c5e6-4b54-b62e-4ab96e6d219c ==============================
+[0m17:28:56.185460 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:28:56.185673 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m17:28:56.185740 [debug] [MainThread]: Tracking: tracking
+[0m17:28:56.192840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d700d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d70460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d70f70>]}
+[0m17:28:56.345861 [debug] [MainThread]: Executing "git --help"
+[0m17:28:56.351017 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:28:56.351559 [debug] [MainThread]: STDERR: "b''"
+[0m17:28:56.354791 [debug] [MainThread]: Acquiring new bigquery connection "debug"
+[0m17:28:56.355359 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:28:56.641966 [debug] [MainThread]: On debug: select 1 as id
+[0m17:28:57.999159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e59520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2c4310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a2c4160>]}
+[0m17:28:58.000757 [debug] [MainThread]: Flushing usage events
+[0m17:28:58.188464 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-02-09 17:31:20.697857 | aab09bde-fba5-496d-9323-a31cbbc01ca6 ==============================
+[0m17:31:20.697883 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:31:20.698284 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m17:31:20.698375 [debug] [MainThread]: Tracking: tracking
+[0m17:31:20.706796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106447d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106447c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106447c40>]}
+[0m17:31:20.747769 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:31:20.747914 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:31:20.751421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aab09bde-fba5-496d-9323-a31cbbc01ca6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10669e0d0>]}
+[0m17:31:20.756737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aab09bde-fba5-496d-9323-a31cbbc01ca6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065b16a0>]}
+[0m17:31:20.756885 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 540 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m17:31:20.757043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aab09bde-fba5-496d-9323-a31cbbc01ca6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106431160>]}
+[0m17:31:20.757778 [info ] [MainThread]: 
+[0m17:31:20.758065 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m17:31:20.758426 [debug] [ThreadPool]: Acquiring new bigquery connection "list_ld-snowplow"
+[0m17:31:20.758513 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:31:21.850143 [debug] [ThreadPool]: Acquiring new bigquery connection "list_ld-snowplow_dbt_anomaly_detection"
+[0m17:31:21.850841 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:31:22.225276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aab09bde-fba5-496d-9323-a31cbbc01ca6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106447bb0>]}
+[0m17:31:22.225809 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:31:22.226030 [info ] [MainThread]: 
+[0m17:31:22.230003 [debug] [Thread-1  ]: Began running node model.anomaly_detection.my_first_dbt_model
+[0m17:31:22.230224 [info ] [Thread-1  ]: 1 of 1 START table model dbt_anomaly_detection.my_first_dbt_model .............. [RUN]
+[0m17:31:22.230552 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.my_first_dbt_model"
+[0m17:31:22.230675 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.my_first_dbt_model
+[0m17:31:22.230817 [debug] [Thread-1  ]: Compiling model.anomaly_detection.my_first_dbt_model
+[0m17:31:22.233991 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.my_first_dbt_model"
+[0m17:31:22.234368 [debug] [Thread-1  ]: finished collecting timing info
+[0m17:31:22.234474 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.my_first_dbt_model
+[0m17:31:22.245932 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m17:31:22.688829 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.my_first_dbt_model"
+[0m17:31:22.689385 [debug] [Thread-1  ]: On model.anomaly_detection.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.my_first_dbt_model"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+SELECT *
+FROM `ld-snowplow`.`dbt_rhashemi`.`aggregations_main`
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+  
+[0m17:31:25.007067 [debug] [Thread-1  ]: finished collecting timing info
+[0m17:31:25.007834 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aab09bde-fba5-496d-9323-a31cbbc01ca6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10681a310>]}
+[0m17:31:25.008194 [info ] [Thread-1  ]: 1 of 1 OK created table model dbt_anomaly_detection.my_first_dbt_model ......... [[32mCREATE TABLE (500.0 rows, 29.4 KB processed)[0m in 2.78s]
+[0m17:31:25.008595 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.my_first_dbt_model
+[0m17:31:25.009952 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m17:31:25.010326 [info ] [MainThread]: 
+[0m17:31:25.010551 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.25 seconds (4.25s).
+[0m17:31:25.010732 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:31:25.010827 [debug] [MainThread]: Connection 'model.anomaly_detection.my_first_dbt_model' was properly closed.
+[0m17:31:25.019568 [info ] [MainThread]: 
+[0m17:31:25.019818 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:31:25.020009 [info ] [MainThread]: 
+[0m17:31:25.020156 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:31:25.020395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10681a310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106664eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065b1340>]}
+[0m17:31:25.020563 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-09 17:31:30.574524 | f54cb906-8b4e-4a2a-8b71-f54a25ea9371 ==============================
+[0m17:31:30.574530 [info ] [MainThread]: Running with dbt=1.2.1
+[0m17:31:30.574724 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m17:31:30.574833 [debug] [MainThread]: Tracking: tracking
+[0m17:31:30.582067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055b7490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055b7430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055b7520>]}
+[0m17:31:30.736392 [debug] [MainThread]: Executing "git --help"
+[0m17:31:30.741330 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:31:30.741807 [debug] [MainThread]: STDERR: "b''"
+[0m17:31:30.744662 [debug] [MainThread]: Acquiring new bigquery connection "debug"
+[0m17:31:30.745264 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:31:31.028864 [debug] [MainThread]: On debug: select 1 as id
+[0m17:31:32.204718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069fc160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069fcbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069fc9a0>]}
+[0m17:31:32.206701 [debug] [MainThread]: Flushing usage events
+[0m17:31:32.564805 [debug] [MainThread]: Connection 'debug' was properly closed.
