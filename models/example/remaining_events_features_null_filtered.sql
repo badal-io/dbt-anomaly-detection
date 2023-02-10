@@ -1,5 +1,5 @@
 {{ config(materialized='table') }}
 
 select *
-from {{ref('remaining_events_features')}}
+from {{ref('filtered_model_features_dbt')}}
 where RMSD_prcnt is not null
