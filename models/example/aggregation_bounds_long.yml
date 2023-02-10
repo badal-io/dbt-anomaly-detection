@@ -1,4 +1,0 @@
-version: 2
-
-models:
-  - name: aggregation_bounds_long
