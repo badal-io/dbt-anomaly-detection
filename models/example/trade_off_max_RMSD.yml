@@ -1,4 +1,0 @@
-version: 2
-
-models:
-  - name: trade_off_max_RMSD
