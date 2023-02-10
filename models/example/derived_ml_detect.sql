@@ -6,7 +6,6 @@
   time_stamps,
         event_count,
         app_event,
-        LoB,
         agg_tag
       FROM
         {{ref('all_agg_derived_cutoff')}}  
@@ -20,84 +19,84 @@
   {% for threshold in var('anomaly_detection_prob_thresholds') %}
 
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_1mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_1mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_1mon_4hr'), '(select * from test_set where agg_tag = "4hr" )', threshold) }} 
 
     UNION ALL
 
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_2mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_2mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_2mon_4hr'), '(select * from test_set where agg_tag = "4hr" )', threshold) }} 
 
     UNION ALL
 
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_05mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_05mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_05mon_4hr'), '(select * from test_set where agg_tag = "4hr" )', threshold) }}       
 
     UNION ALL
     
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_1mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_1mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_1mon_8hr'), '(select * from test_set where agg_tag = "8hr" )', threshold) }} 
 
     UNION ALL
     
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_2mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_2mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_2mon_8hr'), '(select * from test_set where agg_tag = "8hr" )', threshold) }} 
 
     UNION ALL
     
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_05mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_05mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_05mon_8hr'), '(select * from test_set where agg_tag = "8hr" )', threshold) }}       
 
     UNION ALL
     
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_1mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_1mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_1mon_12hr'), '(select * from test_set where agg_tag = "12hr" )', threshold) }} 
 
     UNION ALL
     
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_2mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_2mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_2mon_12hr'), '(select * from test_set where agg_tag = "12hr" )', threshold) }} 
 
     UNION ALL
     
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_05mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_05mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_05mon_12hr'), '(select * from test_set where agg_tag = "12hr" )', threshold) }}       
 
     UNION ALL
     
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_1mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_1mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_1mon_24hr'), '(select * from test_set where agg_tag = "24hr" )', threshold) }} 
 
     UNION ALL
     
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_2mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_2mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_2mon_24hr'), '(select * from test_set where agg_tag = "24hr" )', threshold) }} 
 
     UNION ALL
     
     SELECT
-      app_event, LoB, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_05mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+      app_event, agg_tag, time_stamps, "{{threshold}}" AS prob_threshold, "derived_models_05mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM
       {{ dbt_ml.detect_anomalies(ref('derived_models_05mon_24hr'), '(select * from test_set where agg_tag = "24hr" )', threshold) }}       
 
@@ -108,7 +107,6 @@
   agg_tag,
   time_stamps,
   app_event,
-  LoB,
   prob_threshold,
   training_period
   {% endif %}

@@ -21,7 +21,6 @@ SELECT
   time_stamps,
   event_count,
   app_event,
-  LoB,
   agg_tag
 FROM
   `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_short`

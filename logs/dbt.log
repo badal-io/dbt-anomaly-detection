@@ -20997,3 +20997,2154 @@ WHERE DATE(time_stamps) = CURRENT_DATE() - 1
 [0m20:05:06.347875 [info ] [MainThread]: Done. PASS=39 WARN=0 ERROR=0 SKIP=0 TOTAL=39
 [0m20:05:06.348132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ea0190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ea0130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f57f10>]}
 [0m20:05:06.348343 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-10 20:19:08.435840 | 74f3e5cd-dede-47ee-85d0-fb1e54b9ace0 ==============================
+[0m20:19:08.435896 [info ] [MainThread]: Running with dbt=1.2.1
+[0m20:19:08.436306 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/rana/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m20:19:08.436408 [debug] [MainThread]: Tracking: tracking
+[0m20:19:08.445463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107190b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107190a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071909a0>]}
+[0m20:19:08.498347 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 0 files added, 29 files changed.
+[0m20:19:08.499737 [debug] [MainThread]: Partial parsing: deleted file: anomaly_detection://models/example/derived_ref_including_LoBs.sql
+[0m20:19:08.499844 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_2mon_8hr.sql
+[0m20:19:08.499929 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/aggregation_outliers_long.sql
+[0m20:19:08.500002 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/all_agg_derived_cutoff.sql
+[0m20:19:08.500076 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_05mon_4hr.sql
+[0m20:19:08.500149 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_05mon_24hr.sql
+[0m20:19:08.500219 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/filtered_all_models.sql
+[0m20:19:08.500292 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/remaining_events_min_anomalies_results.sql
+[0m20:19:08.500361 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/count_cutoff.sql
+[0m20:19:08.500430 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_2mon_24hr.sql
+[0m20:19:08.500497 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_events_with_anomalies.sql
+[0m20:19:08.500566 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_2mon_4hr.sql
+[0m20:19:08.500635 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/filtered_model_features_dbt.sql
+[0m20:19:08.500701 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_1mon_4hr.sql
+[0m20:19:08.500768 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_alerts_fired_automation_dbt.sql
+[0m20:19:08.500834 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/ml_detect_tweaked.sql
+[0m20:19:08.500901 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_1mon_8hr.sql
+[0m20:19:08.500969 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/remaining_events_min_RMSD_results.sql
+[0m20:19:08.501035 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/remaining_events_min_RMSD.sql
+[0m20:19:08.501102 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/remaining_events_min_anomalies.sql
+[0m20:19:08.501175 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/aggregation_outliers_short.sql
+[0m20:19:08.501242 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_nonrecent_events.sql
+[0m20:19:08.501309 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_1mon_12hr.sql
+[0m20:19:08.501377 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_05mon_8hr.sql
+[0m20:19:08.501444 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_1mon_24hr.sql
+[0m20:19:08.501510 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/all_agg_derived.sql
+[0m20:19:08.501577 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_model_features_dbt.sql
+[0m20:19:08.501643 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_05mon_12hr.sql
+[0m20:19:08.501710 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_ml_detect.sql
+[0m20:19:08.501775 [debug] [MainThread]: Partial parsing: updated file: anomaly_detection://models/example/derived_models_2mon_12hr.sql
+[0m20:19:08.509206 [debug] [MainThread]: 1699: static parser successfully parsed example/derived_events_with_anomalies.sql
+[0m20:19:08.514913 [debug] [MainThread]: 1699: static parser successfully parsed example/derived_alerts_fired_automation_dbt.sql
+[0m20:19:08.516248 [debug] [MainThread]: 1699: static parser successfully parsed example/ref_distinct_tuples.sql
+[0m20:19:08.517451 [debug] [MainThread]: 1699: static parser successfully parsed example/filtered_all_models.sql
+[0m20:19:08.518674 [debug] [MainThread]: 1699: static parser successfully parsed example/remaining_events_min_RMSD_results.sql
+[0m20:19:08.519800 [debug] [MainThread]: 1699: static parser successfully parsed example/remaining_events_min_RMSD.sql
+[0m20:19:08.521290 [debug] [MainThread]: 1699: static parser successfully parsed example/remaining_events_min_anomalies_results.sql
+[0m20:19:08.522504 [debug] [MainThread]: 1699: static parser successfully parsed example/remaining_events_min_anomalies.sql
+[0m20:19:08.523966 [debug] [MainThread]: 1699: static parser successfully parsed example/remaining_events_features_null_filtered.sql
+[0m20:19:08.525078 [debug] [MainThread]: 1699: static parser successfully parsed example/filtered_model_features_dbt.sql
+[0m20:19:08.526336 [debug] [MainThread]: 1699: static parser successfully parsed example/derived_model_features_dbt.sql
+[0m20:19:08.527459 [debug] [MainThread]: 1699: static parser successfully parsed example/ml_detect_tweaked.sql
+[0m20:19:08.529049 [debug] [MainThread]: 1603: static parser failed on example/derived_ml_detect.sql
+[0m20:19:08.536848 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_ml_detect.sql
+[0m20:19:08.537808 [debug] [MainThread]: 1603: static parser failed on example/derived_models_05mon_4hr.sql
+[0m20:19:08.540764 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_05mon_4hr.sql
+[0m20:19:08.541347 [debug] [MainThread]: 1603: static parser failed on example/derived_models_05mon_8hr.sql
+[0m20:19:08.543923 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_05mon_8hr.sql
+[0m20:19:08.544500 [debug] [MainThread]: 1603: static parser failed on example/derived_models_1mon_4hr.sql
+[0m20:19:08.547478 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_1mon_4hr.sql
+[0m20:19:08.548066 [debug] [MainThread]: 1603: static parser failed on example/derived_models_1mon_8hr.sql
+[0m20:19:08.550568 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_1mon_8hr.sql
+[0m20:19:08.551100 [debug] [MainThread]: 1603: static parser failed on example/derived_models_2mon_4hr.sql
+[0m20:19:08.554104 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_2mon_4hr.sql
+[0m20:19:08.554706 [debug] [MainThread]: 1603: static parser failed on example/derived_models_2mon_8hr.sql
+[0m20:19:08.557511 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_2mon_8hr.sql
+[0m20:19:08.558108 [debug] [MainThread]: 1699: static parser successfully parsed example/aggregation_outliers_long.sql
+[0m20:19:08.559381 [debug] [MainThread]: 1699: static parser successfully parsed example/aggregation_bounds_long.sql
+[0m20:19:08.560530 [debug] [MainThread]: 1699: static parser successfully parsed example/aggregation_quartiles_long.sql
+[0m20:19:08.561738 [debug] [MainThread]: 1699: static parser successfully parsed example/all_agg_derived_cutoff_long.sql
+[0m20:19:08.562848 [debug] [MainThread]: 1603: static parser failed on example/derived_models_05mon_12hr.sql
+[0m20:19:08.565709 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_05mon_12hr.sql
+[0m20:19:08.566269 [debug] [MainThread]: 1603: static parser failed on example/derived_models_05mon_24hr.sql
+[0m20:19:08.569717 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_05mon_24hr.sql
+[0m20:19:08.570283 [debug] [MainThread]: 1603: static parser failed on example/derived_models_1mon_12hr.sql
+[0m20:19:08.601540 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_1mon_12hr.sql
+[0m20:19:08.602235 [debug] [MainThread]: 1603: static parser failed on example/derived_models_1mon_24hr.sql
+[0m20:19:08.605200 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_1mon_24hr.sql
+[0m20:19:08.605809 [debug] [MainThread]: 1603: static parser failed on example/derived_models_2mon_12hr.sql
+[0m20:19:08.608633 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_2mon_12hr.sql
+[0m20:19:08.609219 [debug] [MainThread]: 1603: static parser failed on example/derived_models_2mon_24hr.sql
+[0m20:19:08.612068 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/derived_models_2mon_24hr.sql
+[0m20:19:08.612636 [debug] [MainThread]: 1699: static parser successfully parsed example/aggregation_outliers_short.sql
+[0m20:19:08.613932 [debug] [MainThread]: 1699: static parser successfully parsed example/aggregation_bounds_short.sql
+[0m20:19:08.615164 [debug] [MainThread]: 1699: static parser successfully parsed example/aggregation_quartiles_short.sql
+[0m20:19:08.616280 [debug] [MainThread]: 1699: static parser successfully parsed example/all_agg_derived_cutoff_short.sql
+[0m20:19:08.617392 [debug] [MainThread]: 1699: static parser successfully parsed example/derived_nonrecent_events.sql
+[0m20:19:08.618487 [debug] [MainThread]: 1699: static parser successfully parsed example/all_agg_derived_cutoff.sql
+[0m20:19:08.619715 [debug] [MainThread]: 1699: static parser successfully parsed example/count_cutoff.sql
+[0m20:19:08.620973 [debug] [MainThread]: 1603: static parser failed on example/all_agg_derived.sql
+[0m20:19:08.623818 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/all_agg_derived.sql
+[0m20:19:08.647373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075e60d0>]}
+[0m20:19:08.655135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075178b0>]}
+[0m20:19:08.655316 [info ] [MainThread]: Found 38 models, 0 tests, 0 snapshots, 0 analyses, 540 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics
+[0m20:19:08.655444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10750e700>]}
+[0m20:19:08.656662 [info ] [MainThread]: 
+[0m20:19:08.656893 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m20:19:08.658171 [debug] [ThreadPool]: Acquiring new bigquery connection "list_ld-snowplow"
+[0m20:19:08.658353 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:19:10.057845 [debug] [ThreadPool]: Acquiring new bigquery connection "list_ld-snowplow_dbt_anomaly_detection"
+[0m20:19:10.058427 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:19:10.383088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107548730>]}
+[0m20:19:10.384199 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:19:10.384586 [info ] [MainThread]: 
+[0m20:19:10.391341 [debug] [Thread-1  ]: Began running node model.anomaly_detection.reference_derived
+[0m20:19:10.391870 [info ] [Thread-1  ]: 1 of 38 START table model dbt_anomaly_detection.reference_derived .............. [RUN]
+[0m20:19:10.392379 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.reference_derived"
+[0m20:19:10.392539 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.reference_derived
+[0m20:19:10.392764 [debug] [Thread-1  ]: Compiling model.anomaly_detection.reference_derived
+[0m20:19:10.397479 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.reference_derived"
+[0m20:19:10.398189 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:10.398329 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.reference_derived
+[0m20:19:10.414084 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:10.665057 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.reference_derived"
+[0m20:19:10.666117 [debug] [Thread-1  ]: On model.anomaly_detection.reference_derived: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.reference_derived"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`reference_derived`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT collector_tstamp, event, user_event_name, app_id
+FROM `ld-snowplow`.`dbt_rhashemi`.`web_purchase_exported`
+WHERE DATE(collector_tstamp) >= DATE_SUB(CURRENT_DATE(), INTERVAL 90 DAY) AND DATE(collector_tstamp) < CURRENT_DATE()
+
+UNION ALL
+
+SELECT collector_tstamp, event, user_event_name, app_id
+FROM `ld-snowplow`.`dbt_rhashemi`.`pco_web_apply_filter_exported`
+WHERE DATE(collector_tstamp) >= DATE_SUB(CURRENT_DATE(), INTERVAL 90 DAY) AND DATE(collector_tstamp) < CURRENT_DATE()
+  );
+  
+[0m20:19:14.103480 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:14.104174 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075e79d0>]}
+[0m20:19:14.104572 [info ] [Thread-1  ]: 1 of 38 OK created table model dbt_anomaly_detection.reference_derived ......... [[32mCREATE TABLE (1.1m rows, 34.8 MB processed)[0m in 3.71s]
+[0m20:19:14.104956 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.reference_derived
+[0m20:19:14.105682 [debug] [Thread-1  ]: Began running node model.anomaly_detection.all_agg_derived
+[0m20:19:14.105934 [info ] [Thread-1  ]: 2 of 38 START table model dbt_anomaly_detection.all_agg_derived ................ [RUN]
+[0m20:19:14.106322 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.all_agg_derived"
+[0m20:19:14.106458 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.all_agg_derived
+[0m20:19:14.106584 [debug] [Thread-1  ]: Compiling model.anomaly_detection.all_agg_derived
+[0m20:19:14.111267 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.all_agg_derived"
+[0m20:19:14.111981 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:14.112093 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.all_agg_derived
+[0m20:19:14.114030 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:14.381624 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.all_agg_derived"
+[0m20:19:14.383003 [debug] [Thread-1  ]: On model.anomaly_detection.all_agg_derived: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.all_agg_derived"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived`
+  
+  
+  OPTIONS()
+  as (
+    
+
+
+SELECT "4hr" AS agg_tag,
+  PARSE_TIMESTAMP("%F %H", CONCAT(date_trunc, ' ', CAST(_4hr_trunc AS STRING))) AS time_stamps,
+  app_id,
+  event_type,
+  event_count
+FROM (
+  SELECT FORMAT_TIMESTAMP("%F", collector_tstamp) AS date_trunc,
+    FLOOR(CAST(FORMAT_TIMESTAMP("%H", collector_tstamp) AS INT64)/4)*4 AS _4hr_trunc,
+    app_id,
+    event_type,
+    COUNT(event_type) AS event_count
+  FROM (
+    SELECT collector_tstamp, app_id,
+      CASE WHEN event = "unstruct" THEN user_event_name ELSE event
+      END AS event_type
+    FROM `ld-snowplow`.`dbt_anomaly_detection`.`reference_derived` )
+  GROUP BY
+    date_trunc,
+    _4hr_trunc,
+    app_id,
+    event_type)
+
+UNION ALL
+
+
+SELECT "8hr" AS agg_tag,
+  PARSE_TIMESTAMP("%F %H", CONCAT(date_trunc, ' ', CAST(_8hr_trunc AS STRING))) AS time_stamps,
+  app_id,
+  event_type,
+  event_count
+FROM (
+  SELECT FORMAT_TIMESTAMP("%F", collector_tstamp) AS date_trunc,
+    FLOOR(CAST(FORMAT_TIMESTAMP("%H", collector_tstamp) AS INT64)/8)*8 AS _8hr_trunc,
+    app_id,
+    event_type,
+    COUNT(event_type) AS event_count
+  FROM (
+    SELECT collector_tstamp, app_id,
+      CASE WHEN event = "unstruct" THEN user_event_name ELSE event
+      END AS event_type
+    FROM `ld-snowplow`.`dbt_anomaly_detection`.`reference_derived` )
+  GROUP BY
+    date_trunc,
+    _8hr_trunc,
+    app_id,
+    event_type)
+
+UNION ALL
+
+
+SELECT "12hr" AS agg_tag,
+  PARSE_TIMESTAMP("%F %H", CONCAT(date_trunc, ' ', CAST(_12hr_trunc AS STRING))) AS time_stamps,
+  app_id,
+  event_type,
+  event_count
+FROM (
+  SELECT FORMAT_TIMESTAMP("%F", collector_tstamp) AS date_trunc,
+    FLOOR(CAST(FORMAT_TIMESTAMP("%H", collector_tstamp) AS INT64)/12)*12 AS _12hr_trunc,
+    app_id,
+    event_type,
+    COUNT(event_type) AS event_count
+  FROM (
+    SELECT collector_tstamp, app_id,
+      CASE WHEN event = "unstruct" THEN user_event_name ELSE event
+      END AS event_type
+    FROM `ld-snowplow`.`dbt_anomaly_detection`.`reference_derived` )
+  GROUP BY
+    date_trunc,
+    _12hr_trunc,
+    app_id,
+    event_type)
+
+UNION ALL
+
+
+SELECT "24hr" AS agg_tag,
+  PARSE_TIMESTAMP("%F %H", CONCAT(date_trunc, ' ', CAST(_24hr_trunc AS STRING))) AS time_stamps,
+  app_id,
+  event_type,
+  event_count
+FROM (
+  SELECT FORMAT_TIMESTAMP("%F", collector_tstamp) AS date_trunc,
+    FLOOR(CAST(FORMAT_TIMESTAMP("%H", collector_tstamp) AS INT64)/24)*24 AS _24hr_trunc,
+    app_id,
+    event_type,
+    COUNT(event_type) AS event_count
+  FROM (
+    SELECT collector_tstamp, app_id,
+      CASE WHEN event = "unstruct" THEN user_event_name ELSE event
+      END AS event_type
+    FROM `ld-snowplow`.`dbt_anomaly_detection`.`reference_derived` )
+  GROUP BY
+    date_trunc,
+    _24hr_trunc,
+    app_id,
+    event_type)
+
+ORDER BY
+  agg_tag,
+  time_stamps,
+  app_id,
+  event_type
+
+
+  );
+  
+[0m20:19:18.771307 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:18.772137 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107741d00>]}
+[0m20:19:18.772629 [info ] [Thread-1  ]: 2 of 38 OK created table model dbt_anomaly_detection.all_agg_derived ........... [[32mCREATE TABLE (2.1k rows, 34.4 MB processed)[0m in 4.67s]
+[0m20:19:18.773103 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.all_agg_derived
+[0m20:19:18.773873 [debug] [Thread-1  ]: Began running node model.anomaly_detection.count_cutoff
+[0m20:19:18.774370 [info ] [Thread-1  ]: 3 of 38 START table model dbt_anomaly_detection.count_cutoff ................... [RUN]
+[0m20:19:18.774814 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.count_cutoff"
+[0m20:19:18.774962 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.count_cutoff
+[0m20:19:18.775099 [debug] [Thread-1  ]: Compiling model.anomaly_detection.count_cutoff
+[0m20:19:18.779245 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.count_cutoff"
+[0m20:19:18.779843 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:18.779998 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.count_cutoff
+[0m20:19:18.782247 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:19.160028 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.count_cutoff"
+[0m20:19:19.161839 [debug] [Thread-1  ]: On model.anomaly_detection.count_cutoff: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.count_cutoff"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`count_cutoff`
+  
+  
+  OPTIONS()
+  as (
+    
+
+WITH pairs AS (
+  SELECT CONCAT(app_id, '_', event_type) AS app_event, time_stamps, event_count, agg_tag  
+  FROM `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived`
+)
+
+select agg_tag, app_event, min(time_stamps) as strt_time
+from pairs
+where event_count > 50
+group by app_event, agg_tag 
+order by app_event, agg_tag
+  );
+  
+[0m20:19:22.469366 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:22.470298 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10887e520>]}
+[0m20:19:22.470882 [info ] [Thread-1  ]: 3 of 38 OK created table model dbt_anomaly_detection.count_cutoff .............. [[32mCREATE TABLE (8.0 rows, 77.7 KB processed)[0m in 3.70s]
+[0m20:19:22.471431 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.count_cutoff
+[0m20:19:22.472297 [debug] [Thread-1  ]: Began running node model.anomaly_detection.all_agg_derived_cutoff
+[0m20:19:22.472800 [info ] [Thread-1  ]: 4 of 38 START table model dbt_anomaly_detection.all_agg_derived_cutoff ......... [RUN]
+[0m20:19:22.473298 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.all_agg_derived_cutoff"
+[0m20:19:22.473459 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.all_agg_derived_cutoff
+[0m20:19:22.473620 [debug] [Thread-1  ]: Compiling model.anomaly_detection.all_agg_derived_cutoff
+[0m20:19:22.480699 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.all_agg_derived_cutoff"
+[0m20:19:22.481619 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:22.481790 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.all_agg_derived_cutoff
+[0m20:19:22.484423 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:22.767331 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.all_agg_derived_cutoff"
+[0m20:19:22.768538 [debug] [Thread-1  ]: On model.anomaly_detection.all_agg_derived_cutoff: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.all_agg_derived_cutoff"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff`
+  
+  
+  OPTIONS()
+  as (
+    
+
+WITH pairs AS (
+  SELECT CONCAT(app_id, '_', event_type) AS app_event, time_stamps, event_count, agg_tag  
+  FROM `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived`
+)
+
+select time_stamps, app_event, agg_tag, event_count
+from(
+select time_stamps, strt_time, pairs.app_event, pairs.agg_tag, event_count
+from pairs
+inner join `ld-snowplow`.`dbt_anomaly_detection`.`count_cutoff` as cutoff
+on pairs.agg_tag = cutoff.agg_tag
+and pairs.app_event = cutoff.app_event
+order by pairs.app_event, pairs.agg_tag, time_stamps)
+where time_stamps >= strt_time
+  );
+  
+[0m20:19:25.620341 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:25.621220 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108858070>]}
+[0m20:19:25.621653 [info ] [Thread-1  ]: 4 of 38 OK created table model dbt_anomaly_detection.all_agg_derived_cutoff .... [[32mCREATE TABLE (2.1k rows, 77.9 KB processed)[0m in 3.15s]
+[0m20:19:25.622070 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.all_agg_derived_cutoff
+[0m20:19:25.622870 [debug] [Thread-1  ]: Began running node model.anomaly_detection.all_agg_derived_cutoff_long
+[0m20:19:25.623290 [info ] [Thread-1  ]: 5 of 38 START table model dbt_anomaly_detection.all_agg_derived_cutoff_long .... [RUN]
+[0m20:19:25.623696 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.all_agg_derived_cutoff_long"
+[0m20:19:25.623821 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.all_agg_derived_cutoff_long
+[0m20:19:25.623953 [debug] [Thread-1  ]: Compiling model.anomaly_detection.all_agg_derived_cutoff_long
+[0m20:19:25.627764 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.all_agg_derived_cutoff_long"
+[0m20:19:25.628431 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:25.628564 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.all_agg_derived_cutoff_long
+[0m20:19:25.630644 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:25.914111 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.all_agg_derived_cutoff_long"
+[0m20:19:25.915376 [debug] [Thread-1  ]: On model.anomaly_detection.all_agg_derived_cutoff_long: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.all_agg_derived_cutoff_long"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff_long`
+  
+  
+  OPTIONS()
+  as (
+    
+
+select *
+from `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff`
+where DATE(time_stamps) < DATE_SUB(CURRENT_DATE(), INTERVAL 10 DAY)
+  );
+  
+[0m20:19:28.410366 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:28.412106 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108823f70>]}
+[0m20:19:28.412855 [info ] [Thread-1  ]: 5 of 38 OK created table model dbt_anomaly_detection.all_agg_derived_cutoff_long  [[32mCREATE TABLE (1.9k rows, 75.6 KB processed)[0m in 2.79s]
+[0m20:19:28.413610 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.all_agg_derived_cutoff_long
+[0m20:19:28.413904 [debug] [Thread-1  ]: Began running node model.anomaly_detection.all_agg_derived_cutoff_short
+[0m20:19:28.414188 [info ] [Thread-1  ]: 6 of 38 START table model dbt_anomaly_detection.all_agg_derived_cutoff_short ... [RUN]
+[0m20:19:28.415224 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.all_agg_derived_cutoff_short"
+[0m20:19:28.415460 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.all_agg_derived_cutoff_short
+[0m20:19:28.415644 [debug] [Thread-1  ]: Compiling model.anomaly_detection.all_agg_derived_cutoff_short
+[0m20:19:28.420445 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.all_agg_derived_cutoff_short"
+[0m20:19:28.421303 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:28.421481 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.all_agg_derived_cutoff_short
+[0m20:19:28.426883 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:28.686988 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.all_agg_derived_cutoff_short"
+[0m20:19:28.688305 [debug] [Thread-1  ]: On model.anomaly_detection.all_agg_derived_cutoff_short: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.all_agg_derived_cutoff_short"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff_short`
+  
+  
+  OPTIONS()
+  as (
+    
+
+select *
+from `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff`
+where DATE(time_stamps) < DATE_SUB(CURRENT_DATE(), INTERVAL 15 DAY)
+  );
+  
+[0m20:19:31.122469 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:31.124026 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108823220>]}
+[0m20:19:31.124607 [info ] [Thread-1  ]: 6 of 38 OK created table model dbt_anomaly_detection.all_agg_derived_cutoff_short  [[32mCREATE TABLE (1.8k rows, 75.6 KB processed)[0m in 2.71s]
+[0m20:19:31.125078 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.all_agg_derived_cutoff_short
+[0m20:19:31.125286 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_nonrecent_events
+[0m20:19:31.125871 [info ] [Thread-1  ]: 7 of 38 START table model dbt_anomaly_detection.derived_nonrecent_events ....... [RUN]
+[0m20:19:31.126375 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_nonrecent_events"
+[0m20:19:31.126529 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_nonrecent_events
+[0m20:19:31.126686 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_nonrecent_events
+[0m20:19:31.130599 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_nonrecent_events"
+[0m20:19:31.131428 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:31.131575 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_nonrecent_events
+[0m20:19:31.133947 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:31.558401 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_nonrecent_events"
+[0m20:19:31.559256 [debug] [Thread-1  ]: On model.anomaly_detection.derived_nonrecent_events: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_nonrecent_events"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`derived_nonrecent_events`
+  
+  
+  OPTIONS()
+  as (
+    
+
+SELECT MIN(time_stamps) AS strt_time, app_event
+FROM `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff`
+GROUP BY app_event
+HAVING DATE(MIN(time_stamps)) < DATE_SUB(CURRENT_DATE(), INTERVAL 30 DAY)
+ORDER BY strt_time
+  );
+  
+[0m20:19:33.837746 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:33.838674 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107741f40>]}
+[0m20:19:33.839133 [info ] [Thread-1  ]: 7 of 38 OK created table model dbt_anomaly_detection.derived_nonrecent_events .. [[32mCREATE TABLE (2.0 rows, 48.0 KB processed)[0m in 2.71s]
+[0m20:19:33.839614 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_nonrecent_events
+[0m20:19:33.839841 [debug] [Thread-1  ]: Began running node model.anomaly_detection.aggregation_quartiles_long
+[0m20:19:33.840253 [info ] [Thread-1  ]: 8 of 38 START table model dbt_anomaly_detection.aggregation_quartiles_long ..... [RUN]
+[0m20:19:33.840785 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.aggregation_quartiles_long"
+[0m20:19:33.840961 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.aggregation_quartiles_long
+[0m20:19:33.841134 [debug] [Thread-1  ]: Compiling model.anomaly_detection.aggregation_quartiles_long
+[0m20:19:33.847337 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.aggregation_quartiles_long"
+[0m20:19:33.848103 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:33.848267 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.aggregation_quartiles_long
+[0m20:19:33.850988 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:34.102417 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.aggregation_quartiles_long"
+[0m20:19:34.105033 [debug] [Thread-1  ]: On model.anomaly_detection.aggregation_quartiles_long: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.aggregation_quartiles_long"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_quartiles_long`
+  
+  
+  OPTIONS()
+  as (
+    
+
+select   ARRAY(SELECT x FROM UNNEST(output) AS x WITH OFFSET
+  WHERE OFFSET BETWEEN 1 AND ARRAY_LENGTH(output) - 2) as output, 
+  app_event, agg_tag
+  from (
+select APPROX_QUANTILES(event_count, 4) AS output, app_event
+, agg_tag
+from `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff_long`
+group by app_event, agg_tag
+order by app_event, agg_tag )
+  );
+  
+[0m20:19:36.597627 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:36.599150 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108864310>]}
+[0m20:19:36.599930 [info ] [Thread-1  ]: 8 of 38 OK created table model dbt_anomaly_detection.aggregation_quartiles_long  [[32mCREATE TABLE (8.0 rows, 53.0 KB processed)[0m in 2.76s]
+[0m20:19:36.600524 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.aggregation_quartiles_long
+[0m20:19:36.600747 [debug] [Thread-1  ]: Began running node model.anomaly_detection.aggregation_quartiles_short
+[0m20:19:36.600990 [info ] [Thread-1  ]: 9 of 38 START table model dbt_anomaly_detection.aggregation_quartiles_short .... [RUN]
+[0m20:19:36.601691 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.aggregation_quartiles_short"
+[0m20:19:36.602068 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.aggregation_quartiles_short
+[0m20:19:36.602290 [debug] [Thread-1  ]: Compiling model.anomaly_detection.aggregation_quartiles_short
+[0m20:19:36.609378 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.aggregation_quartiles_short"
+[0m20:19:36.610051 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:36.610212 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.aggregation_quartiles_short
+[0m20:19:36.614568 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:36.871823 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.aggregation_quartiles_short"
+[0m20:19:36.873332 [debug] [Thread-1  ]: On model.anomaly_detection.aggregation_quartiles_short: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.aggregation_quartiles_short"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_quartiles_short`
+  
+  
+  OPTIONS()
+  as (
+    
+
+select   ARRAY(SELECT x FROM UNNEST(output) AS x WITH OFFSET
+  WHERE OFFSET BETWEEN 1 AND ARRAY_LENGTH(output) - 2) as output, 
+  app_event, agg_tag
+  from (
+select APPROX_QUANTILES(event_count, 4) AS output, app_event
+, agg_tag
+from `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff_short`
+group by app_event, agg_tag
+order by app_event, agg_tag )
+  );
+  
+[0m20:19:39.080811 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:39.081658 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10881b820>]}
+[0m20:19:39.082142 [info ] [Thread-1  ]: 9 of 38 OK created table model dbt_anomaly_detection.aggregation_quartiles_short  [[32mCREATE TABLE (8.0 rows, 49.7 KB processed)[0m in 2.48s]
+[0m20:19:39.082579 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.aggregation_quartiles_short
+[0m20:19:39.082772 [debug] [Thread-1  ]: Began running node model.anomaly_detection.aggregation_bounds_long
+[0m20:19:39.083277 [info ] [Thread-1  ]: 10 of 38 START table model dbt_anomaly_detection.aggregation_bounds_long ....... [RUN]
+[0m20:19:39.084076 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.aggregation_bounds_long"
+[0m20:19:39.084258 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.aggregation_bounds_long
+[0m20:19:39.084422 [debug] [Thread-1  ]: Compiling model.anomaly_detection.aggregation_bounds_long
+[0m20:19:39.088492 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.aggregation_bounds_long"
+[0m20:19:39.089165 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:39.089309 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.aggregation_bounds_long
+[0m20:19:39.091626 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:39.347826 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.aggregation_bounds_long"
+[0m20:19:39.349128 [debug] [Thread-1  ]: On model.anomaly_detection.aggregation_bounds_long: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.aggregation_bounds_long"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_bounds_long`
+  
+  
+  OPTIONS()
+  as (
+    
+
+with temp as (
+select quarts, app_event, agg_tag from(
+select *
+from `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_quartiles_long`,
+unnest(output) as quarts)),
+
+temp_1 as (
+select app_event, agg_tag, max(quarts) as q3, min(quarts) as q1
+from temp
+group by app_event, agg_tag),
+
+temp_2 as (
+select app_event, agg_tag, q3, q1, q3-q1 as IQR 
+from temp_1)
+
+select app_event, agg_tag, (q1-4.5*IQR) as LB, (q3+4.5*IQR) as UB
+from temp_2
+order by app_event, agg_tag
+  );
+  
+[0m20:19:41.546761 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:41.547363 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107753fd0>]}
+[0m20:19:41.547713 [info ] [Thread-1  ]: 10 of 38 OK created table model dbt_anomaly_detection.aggregation_bounds_long .. [[32mCREATE TABLE (8.0 rows, 356.0 Bytes processed)[0m in 2.46s]
+[0m20:19:41.548085 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.aggregation_bounds_long
+[0m20:19:41.548266 [debug] [Thread-1  ]: Began running node model.anomaly_detection.aggregation_bounds_short
+[0m20:19:41.548585 [info ] [Thread-1  ]: 11 of 38 START table model dbt_anomaly_detection.aggregation_bounds_short ...... [RUN]
+[0m20:19:41.549171 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.aggregation_bounds_short"
+[0m20:19:41.549350 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.aggregation_bounds_short
+[0m20:19:41.549544 [debug] [Thread-1  ]: Compiling model.anomaly_detection.aggregation_bounds_short
+[0m20:19:41.554216 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.aggregation_bounds_short"
+[0m20:19:41.554770 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:41.554908 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.aggregation_bounds_short
+[0m20:19:41.557143 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:41.838275 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.aggregation_bounds_short"
+[0m20:19:41.839403 [debug] [Thread-1  ]: On model.anomaly_detection.aggregation_bounds_short: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.aggregation_bounds_short"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_bounds_short`
+  
+  
+  OPTIONS()
+  as (
+    
+
+with temp as (
+select quarts, app_event, agg_tag from(
+select *
+from `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_quartiles_short`,
+unnest(output) as quarts)),
+
+temp_1 as (
+select app_event, agg_tag, max(quarts) as q3, min(quarts) as q1
+from temp
+group by app_event, agg_tag),
+
+temp_2 as (
+select app_event, agg_tag, q3, q1, q3-q1 as IQR 
+from temp_1)
+
+select app_event, agg_tag, (q1-4.5*IQR) as LB, (q3+4.5*IQR) as UB
+from temp_2
+order by app_event, agg_tag
+  );
+  
+[0m20:19:45.392064 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:45.392779 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10881b850>]}
+[0m20:19:45.393113 [info ] [Thread-1  ]: 11 of 38 OK created table model dbt_anomaly_detection.aggregation_bounds_short . [[32mCREATE TABLE (8.0 rows, 356.0 Bytes processed)[0m in 3.84s]
+[0m20:19:45.393421 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.aggregation_bounds_short
+[0m20:19:45.393553 [debug] [Thread-1  ]: Began running node model.anomaly_detection.aggregation_outliers_long
+[0m20:19:45.393804 [info ] [Thread-1  ]: 12 of 38 START table model dbt_anomaly_detection.aggregation_outliers_long ..... [RUN]
+[0m20:19:45.394666 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.aggregation_outliers_long"
+[0m20:19:45.394870 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.aggregation_outliers_long
+[0m20:19:45.395043 [debug] [Thread-1  ]: Compiling model.anomaly_detection.aggregation_outliers_long
+[0m20:19:45.403437 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.aggregation_outliers_long"
+[0m20:19:45.404163 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:45.404459 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.aggregation_outliers_long
+[0m20:19:45.406439 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:45.687093 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.aggregation_outliers_long"
+[0m20:19:45.689357 [debug] [Thread-1  ]: On model.anomaly_detection.aggregation_outliers_long: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.aggregation_outliers_long"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
+  
+  
+  OPTIONS()
+  as (
+    
+
+with bounds_agg as (
+select time_stamps, bounds.app_event as app_event, bounds.agg_tag as agg_tag, event_count, LB, UB
+from `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_bounds_long` as bounds
+inner join `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff_long` as aggs
+on bounds.app_event = aggs.app_event
+and bounds.agg_tag = aggs.agg_tag
+order by bounds.app_event, bounds.agg_tag)
+
+select time_stamps, app_event, agg_tag,
+case when event_count > UB then UB
+when event_count < LB then LB
+else event_count
+end as event_count
+from bounds_agg
+order by app_event, agg_tag, time_stamps
+  );
+  
+[0m20:19:47.879730 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:47.881302 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10779bbe0>]}
+[0m20:19:47.882057 [info ] [Thread-1  ]: 12 of 38 OK created table model dbt_anomaly_detection.aggregation_outliers_long  [[32mCREATE TABLE (1.9k rows, 68.3 KB processed)[0m in 2.49s]
+[0m20:19:47.882672 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.aggregation_outliers_long
+[0m20:19:47.882955 [debug] [Thread-1  ]: Began running node model.anomaly_detection.aggregation_outliers_short
+[0m20:19:47.883927 [info ] [Thread-1  ]: 13 of 38 START table model dbt_anomaly_detection.aggregation_outliers_short .... [RUN]
+[0m20:19:47.884764 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.aggregation_outliers_short"
+[0m20:19:47.884956 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.aggregation_outliers_short
+[0m20:19:47.885129 [debug] [Thread-1  ]: Compiling model.anomaly_detection.aggregation_outliers_short
+[0m20:19:47.889973 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.aggregation_outliers_short"
+[0m20:19:47.891787 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:47.892081 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.aggregation_outliers_short
+[0m20:19:47.895073 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:48.275918 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.aggregation_outliers_short"
+[0m20:19:48.277065 [debug] [Thread-1  ]: On model.anomaly_detection.aggregation_outliers_short: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.aggregation_outliers_short"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_short`
+  
+  
+  OPTIONS()
+  as (
+    
+
+with bounds_agg as (
+select time_stamps, bounds.app_event as app_event, bounds.agg_tag as agg_tag, event_count, LB, UB
+from `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_bounds_short` as bounds
+inner join `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff_short` as aggs
+on bounds.app_event = aggs.app_event
+and bounds.agg_tag = aggs.agg_tag
+order by bounds.app_event, bounds.agg_tag)
+
+select time_stamps, app_event, agg_tag,
+case when event_count > UB then UB
+when event_count < LB then LB
+else event_count
+end as event_count
+from bounds_agg
+order by app_event, agg_tag, time_stamps
+  );
+  
+[0m20:19:50.752024 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:50.752739 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077b33a0>]}
+[0m20:19:50.753077 [info ] [Thread-1  ]: 13 of 38 OK created table model dbt_anomaly_detection.aggregation_outliers_short  [[32mCREATE TABLE (1.8k rows, 64.0 KB processed)[0m in 2.87s]
+[0m20:19:50.753390 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.aggregation_outliers_short
+[0m20:19:50.753526 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_05mon_4hr
+[0m20:19:50.753651 [info ] [Thread-1  ]: 14 of 38 START model model dbt_anomaly_detection.derived_models_05mon_4hr ...... [RUN]
+[0m20:19:50.753897 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_05mon_4hr"
+[0m20:19:50.754293 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_05mon_4hr
+[0m20:19:50.754896 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_05mon_4hr
+[0m20:19:50.759246 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_05mon_4hr"
+[0m20:19:50.759690 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:19:50.759793 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_05mon_4hr
+[0m20:19:50.776462 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_05mon_4hr"
+[0m20:19:50.777011 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:50.777180 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_05mon_4hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_05mon_4hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_4hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+30 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+10 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "4hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:20:01.518058 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:01.519064 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10885e820>]}
+[0m20:20:01.519646 [info ] [Thread-1  ]: 14 of 38 OK created model model dbt_anomaly_detection.derived_models_05mon_4hr . [[32mOK[0m in 10.77s]
+[0m20:20:01.520222 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_05mon_4hr
+[0m20:20:01.520494 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_05mon_8hr
+[0m20:20:01.520922 [info ] [Thread-1  ]: 15 of 38 START model model dbt_anomaly_detection.derived_models_05mon_8hr ...... [RUN]
+[0m20:20:01.521519 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_05mon_8hr"
+[0m20:20:01.521709 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_05mon_8hr
+[0m20:20:01.521880 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_05mon_8hr
+[0m20:20:01.529370 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_05mon_8hr"
+[0m20:20:01.530290 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:01.530461 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_05mon_8hr
+[0m20:20:01.533786 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_05mon_8hr"
+[0m20:20:01.534598 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:20:01.534816 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_05mon_8hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_05mon_8hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_8hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+30 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+10 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "8hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:20:12.249364 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:12.251162 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088b6610>]}
+[0m20:20:12.251810 [info ] [Thread-1  ]: 15 of 38 OK created model model dbt_anomaly_detection.derived_models_05mon_8hr . [[32mOK[0m in 10.73s]
+[0m20:20:12.252348 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_05mon_8hr
+[0m20:20:12.252584 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_1mon_4hr
+[0m20:20:12.252832 [info ] [Thread-1  ]: 16 of 38 START model model dbt_anomaly_detection.derived_models_1mon_4hr ....... [RUN]
+[0m20:20:12.253576 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_1mon_4hr"
+[0m20:20:12.253802 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_1mon_4hr
+[0m20:20:12.253983 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_1mon_4hr
+[0m20:20:12.261361 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_1mon_4hr"
+[0m20:20:12.263138 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:12.263352 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_1mon_4hr
+[0m20:20:12.266601 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_1mon_4hr"
+[0m20:20:12.267102 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:20:12.267281 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_1mon_4hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_1mon_4hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_4hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+60 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+10 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "4hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:20:22.935695 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:22.936636 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108852d90>]}
+[0m20:20:22.937203 [info ] [Thread-1  ]: 16 of 38 OK created model model dbt_anomaly_detection.derived_models_1mon_4hr .. [[32mOK[0m in 10.68s]
+[0m20:20:22.937777 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_1mon_4hr
+[0m20:20:22.938039 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_1mon_8hr
+[0m20:20:22.938337 [info ] [Thread-1  ]: 17 of 38 START model model dbt_anomaly_detection.derived_models_1mon_8hr ....... [RUN]
+[0m20:20:22.939404 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_1mon_8hr"
+[0m20:20:22.939717 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_1mon_8hr
+[0m20:20:22.939895 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_1mon_8hr
+[0m20:20:22.947666 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_1mon_8hr"
+[0m20:20:22.949460 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:22.949753 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_1mon_8hr
+[0m20:20:22.955305 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_1mon_8hr"
+[0m20:20:22.955803 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:20:22.956013 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_1mon_8hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_1mon_8hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_8hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+60 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+10 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "8hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:20:33.491462 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:33.492788 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088ad6a0>]}
+[0m20:20:33.493411 [info ] [Thread-1  ]: 17 of 38 OK created model model dbt_anomaly_detection.derived_models_1mon_8hr .. [[32mOK[0m in 10.55s]
+[0m20:20:33.494009 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_1mon_8hr
+[0m20:20:33.494285 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_2mon_4hr
+[0m20:20:33.494930 [info ] [Thread-1  ]: 18 of 38 START model model dbt_anomaly_detection.derived_models_2mon_4hr ....... [RUN]
+[0m20:20:33.495818 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_2mon_4hr"
+[0m20:20:33.496007 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_2mon_4hr
+[0m20:20:33.496182 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_2mon_4hr
+[0m20:20:33.503622 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_2mon_4hr"
+[0m20:20:33.504333 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:33.504483 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_2mon_4hr
+[0m20:20:33.508242 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_2mon_4hr"
+[0m20:20:33.509018 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:20:33.509266 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_2mon_4hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_2mon_4hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_4hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+90 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+10 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "4hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:20:45.136986 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:45.138842 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107753730>]}
+[0m20:20:45.139647 [info ] [Thread-1  ]: 18 of 38 OK created model model dbt_anomaly_detection.derived_models_2mon_4hr .. [[32mOK[0m in 11.64s]
+[0m20:20:45.140219 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_2mon_4hr
+[0m20:20:45.140452 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_2mon_8hr
+[0m20:20:45.140879 [info ] [Thread-1  ]: 19 of 38 START model model dbt_anomaly_detection.derived_models_2mon_8hr ....... [RUN]
+[0m20:20:45.141533 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_2mon_8hr"
+[0m20:20:45.141722 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_2mon_8hr
+[0m20:20:45.141903 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_2mon_8hr
+[0m20:20:45.149212 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_2mon_8hr"
+[0m20:20:45.149962 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:45.150129 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_2mon_8hr
+[0m20:20:45.153356 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_2mon_8hr"
+[0m20:20:45.154082 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:20:45.154309 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_2mon_8hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_2mon_8hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_8hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+90 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+10 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "8hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:20:55.934968 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:55.937058 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10774a250>]}
+[0m20:20:55.937676 [info ] [Thread-1  ]: 19 of 38 OK created model model dbt_anomaly_detection.derived_models_2mon_8hr .. [[32mOK[0m in 10.80s]
+[0m20:20:55.938143 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_2mon_8hr
+[0m20:20:55.938368 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_05mon_12hr
+[0m20:20:55.938573 [info ] [Thread-1  ]: 20 of 38 START model model dbt_anomaly_detection.derived_models_05mon_12hr ..... [RUN]
+[0m20:20:55.939244 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_05mon_12hr"
+[0m20:20:55.939470 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_05mon_12hr
+[0m20:20:55.939632 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_05mon_12hr
+[0m20:20:55.946714 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_05mon_12hr"
+[0m20:20:55.947232 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:20:55.947369 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_05mon_12hr
+[0m20:20:55.950390 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_05mon_12hr"
+[0m20:20:55.950710 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:20:55.950854 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_05mon_12hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_05mon_12hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_12hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+30 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+15 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_short`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "12hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:21:06.134088 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:06.135082 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10880e220>]}
+[0m20:21:06.135626 [info ] [Thread-1  ]: 20 of 38 OK created model model dbt_anomaly_detection.derived_models_05mon_12hr  [[32mOK[0m in 10.20s]
+[0m20:21:06.136190 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_05mon_12hr
+[0m20:21:06.136447 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_05mon_24hr
+[0m20:21:06.136946 [info ] [Thread-1  ]: 21 of 38 START model model dbt_anomaly_detection.derived_models_05mon_24hr ..... [RUN]
+[0m20:21:06.137588 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_05mon_24hr"
+[0m20:21:06.137807 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_05mon_24hr
+[0m20:21:06.138008 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_05mon_24hr
+[0m20:21:06.144380 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_05mon_24hr"
+[0m20:21:06.145186 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:06.145355 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_05mon_24hr
+[0m20:21:06.148697 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_05mon_24hr"
+[0m20:21:06.149228 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:21:06.149460 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_05mon_24hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_05mon_24hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_24hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+30 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+15 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_short`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "24hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:21:16.708006 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:16.709151 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108860e50>]}
+[0m20:21:16.709851 [info ] [Thread-1  ]: 21 of 38 OK created model model dbt_anomaly_detection.derived_models_05mon_24hr  [[32mOK[0m in 10.57s]
+[0m20:21:16.710531 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_05mon_24hr
+[0m20:21:16.710790 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_1mon_12hr
+[0m20:21:16.711272 [info ] [Thread-1  ]: 22 of 38 START model model dbt_anomaly_detection.derived_models_1mon_12hr ...... [RUN]
+[0m20:21:16.711955 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_1mon_12hr"
+[0m20:21:16.712183 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_1mon_12hr
+[0m20:21:16.712380 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_1mon_12hr
+[0m20:21:16.720350 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_1mon_12hr"
+[0m20:21:16.721307 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:16.721471 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_1mon_12hr
+[0m20:21:16.724660 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_1mon_12hr"
+[0m20:21:16.725066 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:21:16.725244 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_1mon_12hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_1mon_12hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_12hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+60 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+15 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_short`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "12hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:21:26.894396 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:26.896277 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c66f40>]}
+[0m20:21:26.897052 [info ] [Thread-1  ]: 22 of 38 OK created model model dbt_anomaly_detection.derived_models_1mon_12hr . [[32mOK[0m in 10.18s]
+[0m20:21:26.897661 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_1mon_12hr
+[0m20:21:26.897936 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_1mon_24hr
+[0m20:21:26.898404 [info ] [Thread-1  ]: 23 of 38 START model model dbt_anomaly_detection.derived_models_1mon_24hr ...... [RUN]
+[0m20:21:26.899089 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_1mon_24hr"
+[0m20:21:26.899336 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_1mon_24hr
+[0m20:21:26.899541 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_1mon_24hr
+[0m20:21:26.910190 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_1mon_24hr"
+[0m20:21:26.912316 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:26.912495 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_1mon_24hr
+[0m20:21:26.917094 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_1mon_24hr"
+[0m20:21:26.917802 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:21:26.918026 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_1mon_24hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_1mon_24hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_24hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+60 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+15 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_short`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "24hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:21:37.564754 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:37.565696 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107779dc0>]}
+[0m20:21:37.566173 [info ] [Thread-1  ]: 23 of 38 OK created model model dbt_anomaly_detection.derived_models_1mon_24hr . [[32mOK[0m in 10.67s]
+[0m20:21:37.566639 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_1mon_24hr
+[0m20:21:37.566835 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_2mon_12hr
+[0m20:21:37.567414 [info ] [Thread-1  ]: 24 of 38 START model model dbt_anomaly_detection.derived_models_2mon_12hr ...... [RUN]
+[0m20:21:37.568116 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_2mon_12hr"
+[0m20:21:37.568277 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_2mon_12hr
+[0m20:21:37.568431 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_2mon_12hr
+[0m20:21:37.574752 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_2mon_12hr"
+[0m20:21:37.575471 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:37.575609 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_2mon_12hr
+[0m20:21:37.578569 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_2mon_12hr"
+[0m20:21:37.579223 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:21:37.579429 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_2mon_12hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_2mon_12hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_12hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+90 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+15 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_short`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "12hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:21:47.415550 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:47.416437 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10776ecd0>]}
+[0m20:21:47.416897 [info ] [Thread-1  ]: 24 of 38 OK created model model dbt_anomaly_detection.derived_models_2mon_12hr . [[32mOK[0m in 9.85s]
+[0m20:21:47.417231 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_2mon_12hr
+[0m20:21:47.417383 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_models_2mon_24hr
+[0m20:21:47.417522 [info ] [Thread-1  ]: 25 of 38 START model model dbt_anomaly_detection.derived_models_2mon_24hr ...... [RUN]
+[0m20:21:47.417875 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_models_2mon_24hr"
+[0m20:21:47.418047 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_models_2mon_24hr
+[0m20:21:47.418188 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_models_2mon_24hr
+[0m20:21:47.422439 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_models_2mon_24hr"
+[0m20:21:47.422918 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:47.423041 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_models_2mon_24hr
+[0m20:21:47.425290 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_models_2mon_24hr"
+[0m20:21:47.425667 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:21:47.425880 [debug] [Thread-1  ]: On model.anomaly_detection.derived_models_2mon_24hr: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_models_2mon_24hr"} */
+
+
+    create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_24hr`
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+        
+-- the highest horizon required for ml.detect func not to pass nulls 
+-- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
+WITH date_control as (
+SELECT 
+CURRENT_DATE() AS cur_date
+),
+
+interval_control as (
+SELECT 
+90 AS training_interval -- SET TRAINING INTERVAL HERE for PROD
+),
+
+lookback as (
+SELECT 
+15 AS lookback_interval -- SET TRAINING INTERVAL HERE for PROD
+FROM interval_control
+)
+--- Code above is for dev/ local only. Code below is for model.
+SELECT
+  time_stamps,
+  event_count,
+  app_event,
+  agg_tag
+FROM
+  `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_short`
+WHERE
+  DATE(time_stamps) >= DATE_SUB(                      --- training on sep 17 to sep 20 if dev 
+    (SELECT cur_date FROM date_control)
+  , INTERVAL (SELECT training_interval FROM interval_control) 
+  DAY) AND DATE(time_stamps) < DATE_SUB(
+    (SELECT cur_date FROM date_control)
+    , INTERVAL (SELECT lookback_interval from lookback)
+    DAY)
+  AND agg_tag = "24hr"
+  -- AND DATE(time_stamps) NOT BETWEEN "2022-11-23" AND "2022-11-30" 
+  -- black friday surges affect the distribution of the training set and therefore, will affect the forecast in an unprecented way. 
+  -- thus, excluding the last week of November from the train set
+    );
+    
+[0m20:21:58.299948 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:58.301247 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c4d130>]}
+[0m20:21:58.573058 [info ] [Thread-1  ]: 25 of 38 OK created model model dbt_anomaly_detection.derived_models_2mon_24hr . [[32mOK[0m in 10.88s]
+[0m20:21:58.573890 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_models_2mon_24hr
+[0m20:21:58.574796 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_ml_detect
+[0m20:21:58.575243 [info ] [Thread-1  ]: 26 of 38 START table model dbt_anomaly_detection.derived_ml_detect ............. [RUN]
+[0m20:21:58.575894 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_ml_detect"
+[0m20:21:58.576101 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_ml_detect
+[0m20:21:58.576311 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_ml_detect
+[0m20:21:58.594745 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_ml_detect"
+[0m20:21:58.596313 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:21:58.596467 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_ml_detect
+[0m20:21:58.598694 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:21:58.836555 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_ml_detect"
+[0m20:21:58.838402 [debug] [Thread-1  ]: On model.anomaly_detection.derived_ml_detect: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_ml_detect"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`derived_ml_detect`
+  
+  
+  OPTIONS()
+  as (
+    -- 2 periods of training * 2 probabality threshold * 4 aggregation levels 
+
+
+  WITH test_set AS (
+  SELECT
+  time_stamps,
+        event_count,
+        app_event,
+        agg_tag
+      FROM
+        `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff`  
+      WHERE (agg_tag = "4hr" AND DATE(time_stamps) >= DATE_SUB(current_date(), INTERVAL 10 DAY)) 
+      OR (agg_tag = "8hr" AND DATE(time_stamps) >= DATE_SUB(current_date(), INTERVAL 10 DAY))
+      OR (agg_tag = "12hr" AND DATE(time_stamps) >= DATE_SUB(current_date(), INTERVAL 15 DAY))
+      OR (agg_tag = "24hr" AND DATE(time_stamps) >= DATE_SUB(current_date(), INTERVAL 15 DAY))
+  )
+
+  
+  
+
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_1mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_4hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "4hr" ))
+    )
+ 
+
+    UNION ALL
+
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_2mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_4hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "4hr" ))
+    )
+ 
+
+    UNION ALL
+
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_05mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_4hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "4hr" ))
+    )
+       
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_1mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_8hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "8hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_2mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_8hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "8hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_05mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_8hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "8hr" ))
+    )
+       
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_1mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_12hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "12hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_2mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_12hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "12hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_05mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_12hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "12hr" ))
+    )
+       
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_1mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_24hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "24hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_2mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_24hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "24hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.9999" AS prob_threshold, "derived_models_05mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_24hr`,
+        struct(0.9999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "24hr" ))
+    )
+       
+
+  
+  UNION ALL
+  
+
+
+
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_1mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_4hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "4hr" ))
+    )
+ 
+
+    UNION ALL
+
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_2mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_4hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "4hr" ))
+    )
+ 
+
+    UNION ALL
+
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_05mon_4hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_4hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "4hr" ))
+    )
+       
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_1mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_8hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "8hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_2mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_8hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "8hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_05mon_8hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_8hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "8hr" ))
+    )
+       
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_1mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_12hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "12hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_2mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_12hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "12hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_05mon_12hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_12hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "12hr" ))
+    )
+       
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_1mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_1mon_24hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "24hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_2mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_24hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "24hr" ))
+    )
+ 
+
+    UNION ALL
+    
+    SELECT
+      app_event, agg_tag, time_stamps, "0.999999" AS prob_threshold, "derived_models_05mon_24hr" AS training_period, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM
+      
+    ml.detect_anomalies(
+        model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_05mon_24hr`,
+        struct(0.999999 as anomaly_prob_threshold),
+        (select * from (select * from test_set where agg_tag = "24hr" ))
+    )
+       
+
+  
+  ORDER BY
+  agg_tag,
+  time_stamps,
+  app_event,
+  prob_threshold,
+  training_period
+  
+
+
+  );
+  
+[0m20:22:02.153811 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:02.154785 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10774a850>]}
+[0m20:22:02.155307 [info ] [Thread-1  ]: 26 of 38 OK created table model dbt_anomaly_detection.derived_ml_detect ........ [[32mCREATE TABLE (1.5k rows, 422.5 KB processed)[0m in 3.58s]
+[0m20:22:02.155789 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_ml_detect
+[0m20:22:02.156385 [debug] [Thread-1  ]: Began running node model.anomaly_detection.ml_detect_tweaked
+[0m20:22:02.156941 [info ] [Thread-1  ]: 27 of 38 START table model dbt_anomaly_detection.ml_detect_tweaked ............. [RUN]
+[0m20:22:02.157475 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.ml_detect_tweaked"
+[0m20:22:02.157653 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.ml_detect_tweaked
+[0m20:22:02.157816 [debug] [Thread-1  ]: Compiling model.anomaly_detection.ml_detect_tweaked
+[0m20:22:02.162154 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.ml_detect_tweaked"
+[0m20:22:02.163034 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:02.163208 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.ml_detect_tweaked
+[0m20:22:02.165928 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:22:02.567654 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.ml_detect_tweaked"
+[0m20:22:02.568694 [debug] [Thread-1  ]: On model.anomaly_detection.ml_detect_tweaked: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.ml_detect_tweaked"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`ml_detect_tweaked`
+  
+  
+  OPTIONS()
+  as (
+     
+  
+  with neg_bound_reset as (
+SELECT app_event, agg_tag, time_stamps, prob_threshold, training_period, event_count, 
+  IF(lower_bound<0, 2, 0.77*lower_bound) AS lower_bound, 1.3*upper_bound AS upper_bound, anomaly_probability, is_anomaly
+FROM `ld-snowplow`.`dbt_anomaly_detection`.`derived_ml_detect` )
+
+SELECT app_event, agg_tag, time_stamps, prob_threshold, training_period, event_count, 
+  lower_bound, upper_bound, anomaly_probability,
+  (upper_bound < event_count OR event_count < lower_bound) AS is_anomaly
+FROM neg_bound_reset
+  );
+  
+[0m20:22:04.819063 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:04.819852 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088b9a00>]}
+[0m20:22:04.820273 [info ] [Thread-1  ]: 27 of 38 OK created table model dbt_anomaly_detection.ml_detect_tweaked ........ [[32mCREATE TABLE (1.5k rows, 137.0 KB processed)[0m in 2.66s]
+[0m20:22:04.820709 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.ml_detect_tweaked
+[0m20:22:04.821479 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_model_features_dbt
+[0m20:22:04.821938 [info ] [Thread-1  ]: 28 of 38 START table model dbt_anomaly_detection.derived_model_features_dbt .... [RUN]
+[0m20:22:04.822390 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_model_features_dbt"
+[0m20:22:04.822524 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_model_features_dbt
+[0m20:22:04.822649 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_model_features_dbt
+[0m20:22:04.826461 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_model_features_dbt"
+[0m20:22:04.827065 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:04.827201 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_model_features_dbt
+[0m20:22:04.831211 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:22:05.117917 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_model_features_dbt"
+[0m20:22:05.118399 [debug] [Thread-1  ]: On model.anomaly_detection.derived_model_features_dbt: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_model_features_dbt"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`derived_model_features_dbt`
+  
+  
+  OPTIONS()
+  as (
+    
+  
+  SELECT
+    app_event,
+    CONCAT(agg_tag, '_', prob_threshold, "threshold", '_', RTRIM(LTRIM(training_period, "derived_models_"), CONCAT('_', agg_tag))) AS control_config,
+    SUM(CASE WHEN is_anomaly = TRUE THEN 1 ELSE 0 END) AS anomalies,
+    SQRT(AVG( POWER(upper_bound - lower_bound, 2) ) ) / AVG(lower_bound) AS RMSD_prcnt,
+    SUM(CASE WHEN lower_bound < 0 THEN 1 ELSE 0 END) AS neg_lower
+  FROM `ld-snowplow`.`dbt_anomaly_detection`.`ml_detect_tweaked` AS all_configs
+  GROUP BY
+    app_event,
+    control_config
+  ORDER BY
+    control_config,
+    app_event
+  );
+  
+[0m20:22:07.970983 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:07.972724 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c54eb0>]}
+[0m20:22:07.973509 [info ] [Thread-1  ]: 28 of 38 OK created table model dbt_anomaly_detection.derived_model_features_dbt  [[32mCREATE TABLE (48.0 rows, 103.8 KB processed)[0m in 3.15s]
+[0m20:22:07.974207 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_model_features_dbt
+[0m20:22:07.975473 [debug] [Thread-1  ]: Began running node model.anomaly_detection.filtered_model_features_dbt
+[0m20:22:07.975971 [info ] [Thread-1  ]: 29 of 38 START table model dbt_anomaly_detection.filtered_model_features_dbt ... [RUN]
+[0m20:22:07.976567 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.filtered_model_features_dbt"
+[0m20:22:07.976761 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.filtered_model_features_dbt
+[0m20:22:07.976932 [debug] [Thread-1  ]: Compiling model.anomaly_detection.filtered_model_features_dbt
+[0m20:22:07.986343 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.filtered_model_features_dbt"
+[0m20:22:07.987163 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:07.987326 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.filtered_model_features_dbt
+[0m20:22:07.989697 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:22:08.213544 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.filtered_model_features_dbt"
+[0m20:22:08.214823 [debug] [Thread-1  ]: On model.anomaly_detection.filtered_model_features_dbt: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.filtered_model_features_dbt"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`filtered_model_features_dbt`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT features.app_event, control_config, anomalies, RMSD_prcnt, neg_lower
+FROM `ld-snowplow`.`dbt_anomaly_detection`.`derived_nonrecent_events` AS non_recent
+INNER JOIN `ld-snowplow`.`dbt_anomaly_detection`.`derived_model_features_dbt` AS features
+  ON non_recent.app_event = features.app_event
+  );
+  
+[0m20:22:11.115874 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:11.117004 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10883f7c0>]}
+[0m20:22:11.117498 [info ] [Thread-1  ]: 29 of 38 OK created table model dbt_anomaly_detection.filtered_model_features_dbt  [[32mCREATE TABLE (48.0 rows, 3.2 KB processed)[0m in 3.14s]
+[0m20:22:11.117935 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.filtered_model_features_dbt
+[0m20:22:11.118660 [debug] [Thread-1  ]: Began running node model.anomaly_detection.ref_distinct_tuples
+[0m20:22:11.118881 [info ] [Thread-1  ]: 30 of 38 START table model dbt_anomaly_detection.ref_distinct_tuples ........... [RUN]
+[0m20:22:11.119284 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.ref_distinct_tuples"
+[0m20:22:11.119430 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.ref_distinct_tuples
+[0m20:22:11.119570 [debug] [Thread-1  ]: Compiling model.anomaly_detection.ref_distinct_tuples
+[0m20:22:11.123731 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.ref_distinct_tuples"
+[0m20:22:11.124579 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:11.124713 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.ref_distinct_tuples
+[0m20:22:11.127060 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:22:11.474352 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.ref_distinct_tuples"
+[0m20:22:11.476574 [debug] [Thread-1  ]: On model.anomaly_detection.ref_distinct_tuples: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.ref_distinct_tuples"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`ref_distinct_tuples`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT DISTINCT app_event
+FROM `ld-snowplow`.`dbt_anomaly_detection`.`filtered_model_features_dbt`
+WHERE app_event LIKE '%add%'
+UNION ALL
+SELECT DISTINCT app_event
+FROM `ld-snowplow`.`dbt_anomaly_detection`.`filtered_model_features_dbt`
+WHERE app_event NOT LIKE '%ad%'
+ORDER BY app_event
+  );
+  
+[0m20:22:13.874805 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:13.875847 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088b8df0>]}
+[0m20:22:13.876359 [info ] [Thread-1  ]: 30 of 38 OK created table model dbt_anomaly_detection.ref_distinct_tuples ...... [[32mCREATE TABLE (2.0 rows, 720.0 Bytes processed)[0m in 2.76s]
+[0m20:22:13.877005 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.ref_distinct_tuples
+[0m20:22:13.877476 [debug] [Thread-1  ]: Began running node model.anomaly_detection.remaining_events_features_null_filtered
+[0m20:22:13.878182 [info ] [Thread-1  ]: 31 of 38 START table model dbt_anomaly_detection.remaining_events_features_null_filtered  [RUN]
+[0m20:22:13.879002 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.remaining_events_features_null_filtered"
+[0m20:22:13.879227 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.remaining_events_features_null_filtered
+[0m20:22:13.879418 [debug] [Thread-1  ]: Compiling model.anomaly_detection.remaining_events_features_null_filtered
+[0m20:22:13.883905 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.remaining_events_features_null_filtered"
+[0m20:22:13.884553 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:13.884719 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.remaining_events_features_null_filtered
+[0m20:22:13.892682 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:22:14.263003 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.remaining_events_features_null_filtered"
+[0m20:22:14.264144 [debug] [Thread-1  ]: On model.anomaly_detection.remaining_events_features_null_filtered: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.remaining_events_features_null_filtered"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_features_null_filtered`
+  
+  
+  OPTIONS()
+  as (
+    
+
+select *
+from `ld-snowplow`.`dbt_anomaly_detection`.`filtered_model_features_dbt`
+where RMSD_prcnt is not null
+  );
+  
+[0m20:22:16.364573 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:16.366292 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ceb910>]}
+[0m20:22:16.367104 [info ] [Thread-1  ]: 31 of 38 OK created table model dbt_anomaly_detection.remaining_events_features_null_filtered  [[32mCREATE TABLE (48.0 rows, 3.1 KB processed)[0m in 2.49s]
+[0m20:22:16.367842 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.remaining_events_features_null_filtered
+[0m20:22:16.369056 [debug] [Thread-1  ]: Began running node model.anomaly_detection.remaining_events_min_anomalies
+[0m20:22:16.369513 [info ] [Thread-1  ]: 32 of 38 START table model dbt_anomaly_detection.remaining_events_min_anomalies  [RUN]
+[0m20:22:16.370055 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.remaining_events_min_anomalies"
+[0m20:22:16.370224 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.remaining_events_min_anomalies
+[0m20:22:16.370387 [debug] [Thread-1  ]: Compiling model.anomaly_detection.remaining_events_min_anomalies
+[0m20:22:16.376394 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.remaining_events_min_anomalies"
+[0m20:22:16.378340 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:16.378629 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.remaining_events_min_anomalies
+[0m20:22:16.381728 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:22:16.621126 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.remaining_events_min_anomalies"
+[0m20:22:16.622548 [debug] [Thread-1  ]: On model.anomaly_detection.remaining_events_min_anomalies: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.remaining_events_min_anomalies"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_min_anomalies`
+  
+  
+  OPTIONS()
+  as (
+    
+
+SELECT app_event, MIN(anomalies) AS anomalies 
+  FROM `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_features_null_filtered`
+  GROUP BY app_event
+  ORDER BY app_event
+  );
+  
+[0m20:22:18.775199 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:18.775967 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108897fd0>]}
+[0m20:22:18.776407 [info ] [Thread-1  ]: 32 of 38 OK created table model dbt_anomaly_detection.remaining_events_min_anomalies  [[32mCREATE TABLE (2.0 rows, 1.1 KB processed)[0m in 2.41s]
+[0m20:22:18.776852 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.remaining_events_min_anomalies
+[0m20:22:18.777577 [debug] [Thread-1  ]: Began running node model.anomaly_detection.remaining_events_min_anomalies_results
+[0m20:22:18.777807 [info ] [Thread-1  ]: 33 of 38 START table model dbt_anomaly_detection.remaining_events_min_anomalies_results  [RUN]
+[0m20:22:18.778189 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.remaining_events_min_anomalies_results"
+[0m20:22:18.778329 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.remaining_events_min_anomalies_results
+[0m20:22:18.778472 [debug] [Thread-1  ]: Compiling model.anomaly_detection.remaining_events_min_anomalies_results
+[0m20:22:18.782493 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.remaining_events_min_anomalies_results"
+[0m20:22:18.784173 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:18.784349 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.remaining_events_min_anomalies_results
+[0m20:22:18.786416 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:22:19.118888 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.remaining_events_min_anomalies_results"
+[0m20:22:19.121321 [debug] [Thread-1  ]: On model.anomaly_detection.remaining_events_min_anomalies_results: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.remaining_events_min_anomalies_results"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_min_anomalies_results`
+  
+  
+  OPTIONS()
+  as (
+    
+
+SELECT neg_lower_criteria_res.app_event, neg_lower_criteria_res.control_config, 
+    neg_lower_criteria_res.anomalies, neg_lower_criteria_res.RMSD_prcnt, neg_lower_criteria_res.neg_lower 
+  FROM `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_features_null_filtered` AS neg_lower_criteria_res
+  INNER JOIN `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_min_anomalies` AS min_neg_lower_min_anomalies
+    ON neg_lower_criteria_res.anomalies = min_neg_lower_min_anomalies.anomalies
+      AND neg_lower_criteria_res.app_event = min_neg_lower_min_anomalies.app_event
+  ORDER BY neg_lower_criteria_res.app_event, RMSD_prcnt DESC
+  );
+  
+[0m20:22:21.595196 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:21.596680 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108855ac0>]}
+[0m20:22:21.597413 [info ] [Thread-1  ]: 33 of 38 OK created table model dbt_anomaly_detection.remaining_events_min_anomalies_results  [[32mCREATE TABLE (30.0 rows, 3.2 KB processed)[0m in 2.82s]
+[0m20:22:21.598014 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.remaining_events_min_anomalies_results
+[0m20:22:21.598710 [debug] [Thread-1  ]: Began running node model.anomaly_detection.remaining_events_min_RMSD
+[0m20:22:21.599165 [info ] [Thread-1  ]: 34 of 38 START table model dbt_anomaly_detection.remaining_events_min_RMSD ..... [RUN]
+[0m20:22:21.599723 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.remaining_events_min_RMSD"
+[0m20:22:21.599903 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.remaining_events_min_RMSD
+[0m20:22:21.600075 [debug] [Thread-1  ]: Compiling model.anomaly_detection.remaining_events_min_RMSD
+[0m20:22:21.607756 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.remaining_events_min_RMSD"
+[0m20:22:21.608534 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:21.608700 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.remaining_events_min_RMSD
+[0m20:22:21.612776 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:22:21.829437 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.remaining_events_min_RMSD"
+[0m20:22:21.830042 [debug] [Thread-1  ]: On model.anomaly_detection.remaining_events_min_RMSD: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.remaining_events_min_RMSD"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_min_RMSD`
+  
+  
+  OPTIONS()
+  as (
+    
+
+SELECT app_event, MIN(RMSD_prcnt) AS RMSD_prcnt 
+  FROM `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_min_anomalies_results`
+  GROUP BY app_event
+  ORDER BY app_event
+  );
+  
+[0m20:22:23.881820 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:23.883427 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cf6160>]}
+[0m20:22:23.884286 [info ] [Thread-1  ]: 34 of 38 OK created table model dbt_anomaly_detection.remaining_events_min_RMSD  [[32mCREATE TABLE (2.0 rows, 690.0 Bytes processed)[0m in 2.28s]
+[0m20:22:23.885104 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.remaining_events_min_RMSD
+[0m20:22:23.886154 [debug] [Thread-1  ]: Began running node model.anomaly_detection.remaining_events_min_RMSD_results
+[0m20:22:23.886740 [info ] [Thread-1  ]: 35 of 38 START table model dbt_anomaly_detection.remaining_events_min_RMSD_results  [RUN]
+[0m20:22:23.887334 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.remaining_events_min_RMSD_results"
+[0m20:22:23.887506 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.remaining_events_min_RMSD_results
+[0m20:22:23.887670 [debug] [Thread-1  ]: Compiling model.anomaly_detection.remaining_events_min_RMSD_results
+[0m20:22:23.894542 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.remaining_events_min_RMSD_results"
+[0m20:22:23.895279 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:22:23.895437 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.remaining_events_min_RMSD_results
+[0m20:22:23.898353 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:22:24.173410 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.remaining_events_min_RMSD_results"
+[0m20:22:24.174740 [debug] [Thread-1  ]: On model.anomaly_detection.remaining_events_min_RMSD_results: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.remaining_events_min_RMSD_results"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_min_RMSD_results`
+  
+  
+  OPTIONS()
+  as (
+    
+
+SELECT anomalies_criteria_res_dbt.app_event, anomalies_criteria_res_dbt.control_config, 
+    anomalies_criteria_res_dbt.anomalies, anomalies_criteria_res_dbt.RMSD_prcnt, anomalies_criteria_res_dbt.neg_lower 
+  FROM `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_min_anomalies_results` AS anomalies_criteria_res_dbt
+  INNER JOIN `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_min_RMSD` AS min_anomalies_max_RMSD
+    ON anomalies_criteria_res_dbt.RMSD_prcnt = min_anomalies_max_RMSD.RMSD_prcnt
+      AND anomalies_criteria_res_dbt.app_event = min_anomalies_max_RMSD.app_event
+  ORDER BY anomalies_criteria_res_dbt.app_event, control_config
+  );
+  
+[0m20:23:57.483431 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:23:57.487965 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c18880>]}
+[0m20:23:57.488874 [info ] [Thread-1  ]: 35 of 38 OK created table model dbt_anomaly_detection.remaining_events_min_RMSD_results  [[32mCREATE TABLE (2.0 rows, 2.0 KB processed)[0m in 93.60s]
+[0m20:23:57.489590 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.remaining_events_min_RMSD_results
+[0m20:23:57.491238 [debug] [Thread-1  ]: Began running node model.anomaly_detection.filtered_all_models
+[0m20:23:57.491858 [info ] [Thread-1  ]: 36 of 38 START table model dbt_anomaly_detection.filtered_all_models ........... [RUN]
+[0m20:23:57.492569 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.filtered_all_models"
+[0m20:23:57.492914 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.filtered_all_models
+[0m20:23:57.493376 [debug] [Thread-1  ]: Compiling model.anomaly_detection.filtered_all_models
+[0m20:23:57.504269 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.filtered_all_models"
+[0m20:23:57.505336 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:23:57.505517 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.filtered_all_models
+[0m20:23:57.508585 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:23:57.891579 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.filtered_all_models"
+[0m20:23:57.894928 [debug] [Thread-1  ]: On model.anomaly_detection.filtered_all_models: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.filtered_all_models"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`filtered_all_models`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT app_event, control_config, anomalies, RMSD_prcnt, neg_lower
+FROM `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_min_RMSD_results`
+WHERE app_event LIKE '%add%'
+UNION ALL 
+SELECT app_event, control_config, anomalies, RMSD_prcnt, neg_lower
+FROM `ld-snowplow`.`dbt_anomaly_detection`.`remaining_events_min_RMSD_results`
+WHERE app_event NOT LIKE '%ad%'
+ORDER BY app_event
+  );
+  
+[0m20:24:00.155628 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:24:00.157793 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d23f10>]}
+[0m20:24:00.159896 [info ] [Thread-1  ]: 36 of 38 OK created table model dbt_anomaly_detection.filtered_all_models ...... [[32mCREATE TABLE (2.0 rows, 132.0 Bytes processed)[0m in 2.67s]
+[0m20:24:00.161055 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.filtered_all_models
+[0m20:24:00.163560 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_alerts_fired_automation_dbt
+[0m20:24:00.163981 [info ] [Thread-1  ]: 37 of 38 START table model dbt_anomaly_detection.derived_alerts_fired_automation_dbt  [RUN]
+[0m20:24:00.164744 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_alerts_fired_automation_dbt"
+[0m20:24:00.165141 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_alerts_fired_automation_dbt
+[0m20:24:00.165345 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_alerts_fired_automation_dbt
+[0m20:24:00.180337 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_alerts_fired_automation_dbt"
+[0m20:24:00.181462 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:24:00.181677 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_alerts_fired_automation_dbt
+[0m20:24:00.183505 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:24:00.443522 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_alerts_fired_automation_dbt"
+[0m20:24:00.445502 [debug] [Thread-1  ]: On model.anomaly_detection.derived_alerts_fired_automation_dbt: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_alerts_fired_automation_dbt"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`derived_alerts_fired_automation_dbt`
+  
+  
+  OPTIONS()
+  as (
+    
+  
+  WITH ml_detect_updated AS (
+    SELECT app_event, 
+      CONCAT(agg_tag, '_', prob_threshold, "threshold", '_', RTRIM(LTRIM(training_period, "derived_models_"), CONCAT('_', agg_tag))) AS control_config,
+      time_stamps, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
+    FROM `ld-snowplow`.`dbt_anomaly_detection`.`ml_detect_tweaked`
+  )
+  SELECT time_stamps, all_configs.app_event AS app_event, control_table.control_config AS control_config, 
+    anomalies, RMSD_prcnt, neg_lower, event_count, lower_bound, upper_bound, anomaly_probability, is_anomaly
+  FROM ml_detect_updated AS all_configs 
+  INNER JOIN `ld-snowplow`.`dbt_anomaly_detection`.`filtered_all_models` AS control_table 
+    ON all_configs.app_event = control_table.app_event
+      AND all_configs.control_config = control_table.control_config
+  ORDER BY all_configs.app_event, time_stamps
+  );
+  
+[0m20:24:02.534204 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:24:02.534660 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10885f5b0>]}
+[0m20:24:02.534914 [info ] [Thread-1  ]: 37 of 38 OK created table model dbt_anomaly_detection.derived_alerts_fired_automation_dbt  [[32mCREATE TABLE (55.0 rows, 138.5 KB processed)[0m in 2.37s]
+[0m20:24:02.535212 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_alerts_fired_automation_dbt
+[0m20:24:02.535650 [debug] [Thread-1  ]: Began running node model.anomaly_detection.derived_events_with_anomalies
+[0m20:24:02.535909 [info ] [Thread-1  ]: 38 of 38 START table model dbt_anomaly_detection.derived_events_with_anomalies . [RUN]
+[0m20:24:02.536215 [debug] [Thread-1  ]: Acquiring new bigquery connection "model.anomaly_detection.derived_events_with_anomalies"
+[0m20:24:02.536320 [debug] [Thread-1  ]: Began compiling node model.anomaly_detection.derived_events_with_anomalies
+[0m20:24:02.536417 [debug] [Thread-1  ]: Compiling model.anomaly_detection.derived_events_with_anomalies
+[0m20:24:02.538997 [debug] [Thread-1  ]: Writing injected SQL for node "model.anomaly_detection.derived_events_with_anomalies"
+[0m20:24:02.539463 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:24:02.539572 [debug] [Thread-1  ]: Began executing node model.anomaly_detection.derived_events_with_anomalies
+[0m20:24:02.541564 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:24:02.727225 [debug] [Thread-1  ]: Writing runtime SQL for node "model.anomaly_detection.derived_events_with_anomalies"
+[0m20:24:02.730094 [debug] [Thread-1  ]: On model.anomaly_detection.derived_events_with_anomalies: /* {"app": "dbt", "dbt_version": "1.2.1", "profile_name": "anomaly_detection", "target_name": "dev", "node_id": "model.anomaly_detection.derived_events_with_anomalies"} */
+
+
+  create or replace table `ld-snowplow`.`dbt_anomaly_detection`.`derived_events_with_anomalies`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT time_stamps, app_event, event_count AS event_count_anomalous_yesterday
+FROM `ld-snowplow`.`dbt_anomaly_detection`.`derived_alerts_fired_automation_dbt`
+WHERE DATE(time_stamps) = CURRENT_DATE() - 1 
+  AND is_anomaly
+  );
+  
+[0m20:24:04.735921 [debug] [Thread-1  ]: finished collecting timing info
+[0m20:24:04.736847 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '74f3e5cd-dede-47ee-85d0-fb1e54b9ace0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c60fa0>]}
+[0m20:24:04.737379 [info ] [Thread-1  ]: 38 of 38 OK created table model dbt_anomaly_detection.derived_events_with_anomalies  [[32mCREATE TABLE (0.0 rows, 1.7 KB processed)[0m in 2.20s]
+[0m20:24:04.737906 [debug] [Thread-1  ]: Finished running node model.anomaly_detection.derived_events_with_anomalies
+[0m20:24:04.739480 [debug] [MainThread]: Acquiring new bigquery connection "master"
+[0m20:24:04.740219 [info ] [MainThread]: 
+[0m20:24:04.740598 [info ] [MainThread]: Finished running 26 table models, 12 model models in 0 hours 4 minutes and 56.08 seconds (296.08s).
+[0m20:24:04.740886 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:24:04.741027 [debug] [MainThread]: Connection 'model.anomaly_detection.derived_events_with_anomalies' was properly closed.
+[0m20:24:04.760937 [info ] [MainThread]: 
+[0m20:24:04.761188 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:24:04.761403 [info ] [MainThread]: 
+[0m20:24:04.761621 [info ] [MainThread]: Done. PASS=38 WARN=0 ERROR=0 SKIP=0 TOTAL=38
+[0m20:24:04.761882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10748c370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cbdeb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d3fee0>]}
+[0m20:24:04.762066 [debug] [MainThread]: Flushing usage events

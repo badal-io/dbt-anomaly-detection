@@ -5,7 +5,7 @@
             'MODEL_TYPE': 'ARIMA_PLUS',
             'TIME_SERIES_TIMESTAMP_COL': 'time_stamps',
             'TIME_SERIES_DATA_COL': 'event_count',
-            'TIME_SERIES_ID_COL': ['app_event', 'LoB', 'agg_tag'], 
+            'TIME_SERIES_ID_COL': ['app_event', 'agg_tag'], 
             'HORIZON': var('anomaly_detection_horizon'), 
             'HOLIDAY_REGION': 'CA'
         }
@@ -33,7 +33,6 @@ SELECT
   time_stamps,
   event_count,
   app_event,
-  LoB,
   agg_tag
 FROM
   {{ ref('aggregation_outliers_short') }}

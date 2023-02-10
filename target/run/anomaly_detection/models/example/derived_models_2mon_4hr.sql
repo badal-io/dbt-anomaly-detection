@@ -1,7 +1,7 @@
 
 
     create or replace model `ld-snowplow`.`dbt_anomaly_detection`.`derived_models_2mon_4hr`
-    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'LoB', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
+    options(MODEL_TYPE="ARIMA_PLUS",TIME_SERIES_TIMESTAMP_COL="time_stamps",TIME_SERIES_DATA_COL="event_count",TIME_SERIES_ID_COL=['app_event', 'agg_tag'],HORIZON=120,HOLIDAY_REGION="CA")as (
         
 -- the highest horizon required for ml.detect func not to pass nulls 
 -- horizon = 30 would result in 6 nulls for 4hr agg, 3 nulls for 8hr agg, 2 nulls for 12hr agg and 1 null for 24hr agg. 
@@ -25,7 +25,6 @@ SELECT
   time_stamps,
   event_count,
   app_event,
-  LoB,
   agg_tag
 FROM
   `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
