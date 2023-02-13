@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', tags=["config_selection"]) }}
 SELECT DISTINCT app_event
 FROM {{ref('filtered_model_features_dbt')}}
 WHERE app_event LIKE '%add%'

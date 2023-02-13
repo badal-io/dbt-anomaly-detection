@@ -1,4 +1,0 @@
-version: 2
-
-models:
-  - name: dev_ml_model_constraints

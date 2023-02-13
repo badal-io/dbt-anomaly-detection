@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', tags=["data_preparation"]) }}
 
 with temp as (
 select quarts, app_event, agg_tag from(
