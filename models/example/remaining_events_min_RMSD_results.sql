@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', tags=["config_selection"]) }}
 
 SELECT anomalies_criteria_res_dbt.app_event, anomalies_criteria_res_dbt.control_config, 
     anomalies_criteria_res_dbt.anomalies, anomalies_criteria_res_dbt.RMSD_prcnt, anomalies_criteria_res_dbt.neg_lower 

@@ -1,4 +1,4 @@
-  {{ config(materialized='table') }} 
+{{ config(materialized='table', tags=["modelling"]) }}
   
   with neg_bound_reset as (
 SELECT app_event, agg_tag, time_stamps, prob_threshold, training_period, event_count, 

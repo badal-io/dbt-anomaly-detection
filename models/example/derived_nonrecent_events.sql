@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', tags=["config_selection"]) }}
 
 SELECT MIN(time_stamps) AS strt_time, app_event
 FROM {{ref('all_agg_derived_cutoff')}}

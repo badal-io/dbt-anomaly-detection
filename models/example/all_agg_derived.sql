@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', tags=["data_preparation"]) }}
 
 {% for agg_level in var('anomaly_detection_aggregation_levels') %}
 SELECT "{{agg_level}}hr" AS agg_tag,

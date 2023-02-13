@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', tags=["config_selection"]) }}
 SELECT app_event, control_config, anomalies, RMSD_prcnt, neg_lower
 FROM {{ref('remaining_events_min_RMSD_results')}}
 WHERE app_event LIKE '%add%'

@@ -1,6 +1,7 @@
 {{
     config(
         materialized='model',
+        tags=["modelling"],
         ml_config={
             'MODEL_TYPE': 'ARIMA_PLUS',
             'TIME_SERIES_TIMESTAMP_COL': 'time_stamps',

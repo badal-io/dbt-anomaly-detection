@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', tags=["data_preparation"]) }}
 
 WITH pairs AS (
   SELECT CONCAT(app_id, '_', event_type) AS app_event, time_stamps, event_count, agg_tag  

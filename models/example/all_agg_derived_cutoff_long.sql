@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', tags=["data_preparation"]) }}
 
 select *
 from {{ref('all_agg_derived_cutoff')}}

@@ -1,5 +1,5 @@
 -- 2 periods of training * 2 probabality threshold * 4 aggregation levels 
-{{ config(materialized='table') }}
+{{ config(materialized='table', tags=["modelling"]) }}
 
   WITH test_set AS (
   SELECT
