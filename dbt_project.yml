@@ -16,6 +16,15 @@ vars:
   anomaly_detection_aggregation_levels: [4, 8, 12, 24]
   anomaly_detection_prob_thresholds : [0.9999, 0.999999]
   anomaly_detection_horizon: 120
+
+  models:
+    1mon_12hr:
+      period: "12hr"
+      train_interval: 60
+    2mon_24hr:
+      period: "24hr"
+      train_interval: 15
+      forecast_interval: 60
   
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -40,3 +49,13 @@ models:
   anomaly_detection:
     # Config indicated by + and applies to all files under models/example/
     +materialized: view
+
+models:
+  anomaly_detection:
+    example:
+      ml_detect:
+        +pre-hook:
+          - "{{ create_models() }}"
+
+on-run-start: 
+  - "{{ ml_detect() }}"
