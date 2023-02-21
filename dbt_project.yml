@@ -45,17 +45,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/ directory
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
-models:
-  anomaly_detection:
-    # Config indicated by + and applies to all files under models/example/
-    +materialized: view
 
 models:
   anomaly_detection:
+    +materialized: view
     example:
-      ml_detect:
+      derived_ml_detect:
         +pre-hook:
           - "{{ create_models() }}"
 
 on-run-start: 
-  - "{{ ml_detect() }}"
+  - "{{ create_models() }}"
