@@ -2,7 +2,7 @@
   
   with neg_bound_reset as (
 SELECT app_event, agg_tag, time_stamps, prob_threshold, training_period, event_count, 
-  IF(lower_bound<0, 2, 0.77*lower_bound) AS lower_bound, 1.3*upper_bound AS upper_bound, anomaly_probability, is_anomaly
+  IF (lower_bound < 0, {{ var('neg_lower_bound_reset') }}, (1 / {{ var('bounds_coeff') }}) * lower_bound) AS lower_bound, {{ var('bounds_coeff') }} * upper_bound AS upper_bound, anomaly_probability, is_anomaly
 FROM {{ref('derived_ml_detect')}} )
 
 SELECT app_event, agg_tag, time_stamps, prob_threshold, training_period, event_count, 

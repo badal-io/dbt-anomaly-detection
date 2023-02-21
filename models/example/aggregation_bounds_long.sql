@@ -15,6 +15,6 @@ temp_2 as (
 select app_event, agg_tag, q3, q1, q3-q1 as IQR 
 from temp_1)
 
-select app_event, agg_tag, (q1-4.5*IQR) as LB, (q3+4.5*IQR) as UB
+select app_event, agg_tag, (q1-{{ var('IQR_coeff') }}*IQR) as LB, (q3+{{ var('IQR_coeff') }}*IQR) as UB
 from temp_2
 order by app_event, agg_tag

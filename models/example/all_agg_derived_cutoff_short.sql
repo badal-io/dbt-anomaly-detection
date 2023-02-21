@@ -2,4 +2,4 @@
 
 select *
 from {{ref('all_agg_derived_cutoff')}}
-where DATE(time_stamps) < DATE_SUB("2023-02-09", INTERVAL 15 DAY)
+where DATE(time_stamps) < DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('models')["1mon_24hr"]['forecast_interval'] }} DAY)

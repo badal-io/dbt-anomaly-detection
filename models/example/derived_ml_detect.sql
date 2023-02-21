@@ -8,7 +8,7 @@
           app_event,
           agg_tag
         FROM
-          `ld-snowplow`.`dbt_anomaly_detection`.`all_agg_derived_cutoff`
+          {{ ref('all_agg_derived_cutoff') }}
         WHERE
 
       {% for model in var('models') %}

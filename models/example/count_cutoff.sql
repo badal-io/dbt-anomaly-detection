@@ -7,6 +7,6 @@ WITH pairs AS (
 
 select agg_tag, app_event, min(time_stamps) as strt_time
 from pairs
-where event_count > 50
+where event_count > {{ var('cutoff_count') }}
 group by app_event, agg_tag 
 order by app_event, agg_tag 
