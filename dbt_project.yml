@@ -17,14 +17,20 @@ vars:
   anomaly_detection_prob_thresholds : [0.9999, 0.999999]
   anomaly_detection_horizon: 120
 
+  start_date: "\"2023-02-09\""
+  # start_date: "CURRENT_DATE()"
+
   models:
-    1mon_12hr:
-      period: "12hr"
+    1mon_8hr:
+      period: "8hr"
       train_interval: 60
+      forecast_interval: 10
+      period_type: "long"
     2mon_24hr:
       period: "24hr"
-      train_interval: 15
-      forecast_interval: 60
+      train_interval: 90
+      forecast_interval: 15
+      period_type: "short"
   
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -53,6 +59,3 @@ models:
       derived_ml_detect:
         +pre-hook:
           - "{{ create_models() }}"
-
-on-run-start: 
-  - "{{ create_models() }}"
