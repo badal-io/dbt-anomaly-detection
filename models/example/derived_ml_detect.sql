@@ -10,14 +10,7 @@
         FROM
           {{ ref('all_agg_derived_cutoff') }}
         WHERE
-
-      {% for model in var('models') %}
-
-        (agg_tag = "{{ var('models')[model]['period'] }}" AND DATE(time_stamps) >= DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('models')[model]['forecast_interval'] }} DAY))
-
-        {{ " OR " if not loop.last }}
-
-      {% endfor %}
+        DATE(time_stamps) >= DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('anomaly_detection_forecast_interval') }} DAY)
   )
 
     {% for threshold in var('anomaly_detection_prob_thresholds') %}

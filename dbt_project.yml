@@ -16,6 +16,7 @@ vars:
   anomaly_detection_aggregation_levels: [4, 8, 12, 24]
   anomaly_detection_prob_thresholds : [0.9999, 0.999999]
   anomaly_detection_horizon: 120
+  anomaly_detection_forecast_interval: 10
 
   start_date: "\"2023-02-09\""
   # start_date: "CURRENT_DATE()"
@@ -37,63 +38,39 @@ vars:
     1mon_8hr:
       period: "8hr"
       train_interval: 60
-      forecast_interval: 10
-      period_type: "long"
     2mon_24hr:
       period: "24hr"
       train_interval: 90
-      forecast_interval: 10
-      period_type: "long"
     2mon_12hr:
       period: "12hr"
       train_interval: 90
-      forecast_interval: 10
-      period_type: "long"
     2mon_8hr:
       period: "8hr"
       train_interval: 90
-      forecast_interval: 10
-      period_type: "long"
     2mon_4hr:
       period: "4hr"
       train_interval: 90
-      forecast_interval: 10
-      period_type: "long"
     1mon_4hr:
       period: "4hr"
       train_interval: 60
-      forecast_interval: 10
-      period_type: "long"
     1mon_12hr:
       period: "12hr"
       train_interval: 60
-      forecast_interval: 10
-      period_type: "long"
     1mon_24hr:
       period: "24hr"
       train_interval: 60
-      forecast_interval: 10
-      period_type: "long"
     05mon_4hr:
       period: "4hr"
       train_interval: 30
-      forecast_interval: 10
-      period_type: "long"
     05mon_8hr:
       period: "8hr"
       train_interval: 30
-      forecast_interval: 10
-      period_type: "long"
     05mon_12hr:
       period: "12hr"
       train_interval: 30
-      forecast_interval: 10
-      period_type: "long"
     05mon_24hr:
       period: "24hr"
       train_interval: 30
-      forecast_interval: 10
-      period_type: "long"
   
 model-paths: ["models"]
 analysis-paths: ["analyses"]

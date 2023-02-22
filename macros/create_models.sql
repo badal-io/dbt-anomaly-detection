@@ -17,10 +17,10 @@
           app_event,
           agg_tag
         FROM
-          `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_{{ var('models')[model]['period_type'] }}`
+          `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
         WHERE
           DATE(time_stamps) >= DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('models')[model]['train_interval'] }} DAY)
-          AND DATE(time_stamps) < DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('models')[model]['forecast_interval'] }} DAY)
+          AND DATE(time_stamps) < DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('anomaly_detection_forecast_interval') }} DAY)
           AND agg_tag = "{{ var('models')[model]['period'] }}"
       );
 
