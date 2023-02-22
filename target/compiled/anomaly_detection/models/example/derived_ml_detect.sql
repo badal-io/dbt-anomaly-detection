@@ -19,49 +19,13 @@
 
       
 
-        (agg_tag = "24hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 15 DAY))
+        (agg_tag = "24hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
 
          OR 
 
       
 
-        (agg_tag = "12hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 15 DAY))
-
-         OR 
-
-      
-
-        (agg_tag = "8hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
-
-         OR 
-
-      
-
-        (agg_tag = "4hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
-
-         OR 
-
-      
-
-        (agg_tag = "4hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
-
-         OR 
-
-      
-
-        (agg_tag = "12hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 15 DAY))
-
-         OR 
-
-      
-
-        (agg_tag = "24hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 15 DAY))
-
-         OR 
-
-      
-
-        (agg_tag = "4hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
+        (agg_tag = "12hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
 
          OR 
 
@@ -73,13 +37,49 @@
 
       
 
-        (agg_tag = "12hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 15 DAY))
+        (agg_tag = "4hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
 
          OR 
 
       
 
-        (agg_tag = "24hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 15 DAY))
+        (agg_tag = "4hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
+
+         OR 
+
+      
+
+        (agg_tag = "12hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
+
+         OR 
+
+      
+
+        (agg_tag = "24hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
+
+         OR 
+
+      
+
+        (agg_tag = "4hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
+
+         OR 
+
+      
+
+        (agg_tag = "8hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
+
+         OR 
+
+      
+
+        (agg_tag = "12hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
+
+         OR 
+
+      
+
+        (agg_tag = "24hr" AND DATE(time_stamps) >= DATE_SUB("2023-02-09", INTERVAL 10 DAY))
 
         
 
