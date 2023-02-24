@@ -29,6 +29,12 @@ vars:
   data_interval: 90
 
   source_table: sample_table
+  source_name: sampled_data
+  collector_tstamp: collector_tstamp
+  event_id: event_id
+  event_type: event_type
+  app_id: app_id 
+  # comments about input variables
 
   models:
     1mon_8hr:
