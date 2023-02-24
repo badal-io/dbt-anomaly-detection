@@ -28,11 +28,7 @@ vars:
   bounds_coeff: 1.3
   data_interval: 90
 
-  sources:
-    source_1:
-      table: web_purchase_exported
-    source_2:
-      table: pco_web_apply_filter_exported
+  source_table: sample_table
 
   models:
     1mon_8hr:
