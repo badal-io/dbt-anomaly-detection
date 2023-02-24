@@ -1,5 +1,9 @@
--- 2 periods of training * 2 probabality threshold * 4 aggregation levels 
+-- 2 periods of training * 2 probabality threshold * 4 aggregation levels
+
 {{ config(materialized='table', tags=["modelling"]) }}
+
+-- depends_on: {{ ref('aggregation_outliers_long') }}
+
 
   WITH test_set AS (
     SELECT
