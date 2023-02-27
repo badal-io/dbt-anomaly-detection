@@ -24,7 +24,7 @@ vars:
   data_interval: 90
 ```
 
-``` sql
+``` jinja
 {{ config(materialized='table', tags=["data_preparation"]) }}
 
 with bounds_agg as (
