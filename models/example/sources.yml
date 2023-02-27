@@ -1,12 +1,8 @@
 version: 2
 
-sources:
-  - name: derived_app_event_1
-    schema: dbt_rhashemi
-    tables:
-      - name: web_purchase_exported
 
-  - name: derived_app_event_2
-    schema: dbt_rhashemi
-    tables:
-      - name: pco_web_apply_filter_exported
+sources:
+ - name: sampled_data
+   schema: dbt_rhashemi
+   tables:
+     - name: sample_table_final
