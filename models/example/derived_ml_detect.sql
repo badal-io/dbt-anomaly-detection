@@ -9,7 +9,7 @@
     SELECT
     time_stamps,
           event_count,
-          app_event,
+          {{ var('app_event') }},
           agg_tag
         FROM
           {{ ref('all_agg_derived_cutoff') }}
@@ -24,7 +24,7 @@
       {% for model in var('models') %}
 
         SELECT
-          app_event, agg_tag,
+          {{ var('app_event') }}, agg_tag,
           time_stamps,
           "{{threshold}}" AS prob_threshold,
           "derived_models_{{ model }}" AS training_period,

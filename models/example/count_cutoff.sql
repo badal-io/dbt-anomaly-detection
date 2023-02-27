@@ -1,12 +1,7 @@
 {{ config(materialized='table', tags=["data_preparation"]) }}
 
-WITH pairs AS (
-  SELECT CONCAT(app_id, '_', event_type) AS app_event, time_stamps, event_count, agg_tag  
-  FROM {{ref('all_agg_derived')}}
-)
-
-select agg_tag, app_event, min(time_stamps) as strt_time
-from pairs
+select agg_tag, {{ var('app_event') }}, min(time_stamps) as strt_time
+from {{ref('all_agg_derived')}}
 where event_count > {{ var('cutoff_count') }}
-group by app_event, agg_tag 
-order by app_event, agg_tag 
+group by {{ var('app_event') }}, agg_tag 
+order by {{ var('app_event') }}, agg_tag 

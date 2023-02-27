@@ -7,14 +7,14 @@
         MODEL_TYPE="ARIMA_PLUS",
         TIME_SERIES_TIMESTAMP_COL="time_stamps",
         TIME_SERIES_DATA_COL="event_count",
-        TIME_SERIES_ID_COL=['app_event', 'agg_tag'],
+        TIME_SERIES_ID_COL=['{{ var('app_event') }}', 'agg_tag'],
         HORIZON={{ var('anomaly_detection_horizon') }},
-        HOLIDAY_REGION="CA"
+        HOLIDAY_REGION="{{ var('anomaly_detection_holiday_region') }}"
       ) as (
         SELECT
           time_stamps,
           event_count,
-          app_event,
+          {{ var('app_event') }},
           agg_tag
         FROM
           `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
