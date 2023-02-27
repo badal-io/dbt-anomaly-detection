@@ -1,9 +1,9 @@
 {{ config(materialized='table', tags=["config_selection"]) }}
 
-SELECT anomalies_criteria_res_dbt.{{ var('app_event') }}, anomalies_criteria_res_dbt.control_config, 
-    anomalies_criteria_res_dbt.anomalies, anomalies_criteria_res_dbt.RMSD_prcnt, anomalies_criteria_res_dbt.neg_lower 
-  FROM {{ref('min_anomalies_configs')}} AS anomalies_criteria_res_dbt
-  INNER JOIN {{ref('min_RMSD')}} AS min_anomalies_max_RMSD
-    ON anomalies_criteria_res_dbt.RMSD_prcnt = min_anomalies_max_RMSD.RMSD_prcnt
-      AND anomalies_criteria_res_dbt.{{ var('app_event') }} = min_anomalies_max_RMSD.{{ var('app_event') }}
-  ORDER BY anomalies_criteria_res_dbt.{{ var('app_event') }}, control_config
+SELECT configs.{{ var('app_event') }}, configs.control_config, 
+    configs.anomalies, configs.RMSD_prcnt
+  FROM {{ref('min_anomalies_configs')}} AS configs
+  INNER JOIN {{ref('min_RMSD')}} AS min_RMSD
+    ON configs.RMSD_prcnt = min_RMSD.RMSD_prcnt
+      AND configs.{{ var('app_event') }} = min_RMSD.{{ var('app_event') }}
+  ORDER BY configs.{{ var('app_event') }}, control_config

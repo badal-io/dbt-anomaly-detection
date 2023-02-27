@@ -1,9 +1,9 @@
 {{ config(materialized='table', tags=["config_selection"]) }}
 
-SELECT neg_lower_criteria_res.{{ var('app_event') }}, neg_lower_criteria_res.control_config, 
-    neg_lower_criteria_res.anomalies, neg_lower_criteria_res.RMSD_prcnt, neg_lower_criteria_res.neg_lower 
-  FROM {{ref('filtered_nonrecent_configs')}} AS neg_lower_criteria_res
-  INNER JOIN {{ref('min_anomalies')}} AS min_neg_lower_min_anomalies
-    ON neg_lower_criteria_res.anomalies = min_neg_lower_min_anomalies.anomalies
-      AND neg_lower_criteria_res.{{ var('app_event') }} = min_neg_lower_min_anomalies.{{ var('app_event') }}
-  ORDER BY neg_lower_criteria_res.{{ var('app_event') }}, RMSD_prcnt DESC
+SELECT configs.{{ var('app_event') }}, configs.control_config, 
+    configs.anomalies, configs.RMSD_prcnt
+  FROM {{ref('filtered_nonrecent_configs')}} AS configs
+  INNER JOIN {{ref('min_anomalies')}} AS min_anomalies
+    ON configs.anomalies = min_anomalies.anomalies
+      AND configs.{{ var('app_event') }} = min_anomalies.{{ var('app_event') }}
+  ORDER BY configs.{{ var('app_event') }}, RMSD_prcnt DESC
