@@ -14,7 +14,7 @@ Try running the following commands:
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
 
-``` sql
+``` yaml
 vars:
   anomaly_detection_aggregation_levels: [4, 8, 12, 24]
   anomaly_detection_prob_thresholds : [0.9999, 0.999999]
