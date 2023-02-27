@@ -98,6 +98,6 @@ models:
   anomaly_detection:
     +materialized: view
     example:
-      derived_ml_detect:
+      forecasts:
         +pre-hook:
           - "{{ create_models() }}"

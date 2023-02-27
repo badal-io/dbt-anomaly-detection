@@ -2,7 +2,7 @@
 
     {% for model in var('models') %}
 
-      create or replace model `{{ target.database }}`.`{{ target.schema }}`.`derived_models_{{ model }}`
+      create or replace model `{{ target.database }}`.`{{ target.schema }}`.`models_{{ model }}`
       options(
         MODEL_TYPE="ARIMA_PLUS",
         TIME_SERIES_TIMESTAMP_COL="time_stamps",
@@ -17,7 +17,7 @@
           {{ var('app_event') }},
           agg_tag
         FROM
-          `ld-snowplow`.`dbt_anomaly_detection`.`aggregation_outliers_long`
+          `ld-snowplow`.`dbt_anomaly_detection`.`IQR_outliers`
         WHERE
           DATE(time_stamps) >= DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('models')[model]['train_interval'] }} DAY)
           AND DATE(time_stamps) < DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('anomaly_detection_forecast_interval') }} DAY)

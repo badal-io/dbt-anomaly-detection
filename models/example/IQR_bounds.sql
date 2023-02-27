@@ -3,7 +3,7 @@
 with temp as (
 select quarts, {{ var('app_event') }}, agg_tag from(
 select *
-from {{ref('aggregation_quartiles_long')}},
+from {{ref('IQR_quartiles')}},
 unnest(output) as quarts)),
 
 temp_1 as (

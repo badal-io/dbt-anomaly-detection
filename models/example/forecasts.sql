@@ -2,7 +2,7 @@
 
 {{ config(materialized='table', tags=["modelling"]) }}
 
--- depends_on: {{ ref('aggregation_outliers_long') }}
+-- depends_on: {{ ref('IQR_outliers') }}
 
 
   WITH test_set AS (
@@ -12,7 +12,7 @@
           {{ var('app_event') }},
           agg_tag
         FROM
-          {{ ref('all_agg_derived_cutoff') }}
+          {{ ref('aggregations_cutoff') }}
         WHERE
         DATE(time_stamps) >= DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('anomaly_detection_forecast_interval') }} DAY)
   )
@@ -35,7 +35,7 @@
           anomaly_probability
         FROM
           ml.detect_anomalies(
-            model `{{ target.database }}`.`{{ target.schema }}`.`derived_models_{{ model }}`,
+            model `{{ target.database }}`.`{{ target.schema }}`.`models_{{ model }}`,
             struct( {{threshold}} as anomaly_prob_threshold),
             (select * from (select * from test_set where agg_tag = "{{ var('models')[model]['period'] }}" ))
           )

@@ -6,6 +6,6 @@ select   ARRAY(SELECT x FROM UNNEST(output) AS x WITH OFFSET
   from (
 select APPROX_QUANTILES(event_count, 4) AS output, {{ var('app_event') }}
 , agg_tag
-from {{ref('all_agg_derived_cutoff_long')}}
+from {{ref('train_data')}}
 group by {{ var('app_event') }}, agg_tag
 order by {{ var('app_event') }}, agg_tag )

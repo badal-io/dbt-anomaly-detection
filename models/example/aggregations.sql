@@ -15,7 +15,7 @@
    FLOOR(CAST(FORMAT_TIMESTAMP("%H", {{ var('collector_tstamp') }}) AS INT64)/{{agg_level}})*{{agg_level}} AS _{{agg_level}}hr_trunc,
 {{ var('app_event') }},
    COUNT({{ var('event_id') }}) AS event_count
-   FROM {{ref('reference_derived')}}
+   FROM {{ref('raw_data')}}
    GROUP BY
    date_trunc,
    _{{agg_level}}hr_trunc,

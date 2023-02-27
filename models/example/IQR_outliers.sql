@@ -2,8 +2,8 @@
 
 with bounds_agg as (
 select time_stamps, bounds.{{ var('app_event') }} as {{ var('app_event') }}, bounds.agg_tag as agg_tag, event_count, LB, UB
-from {{ref('aggregation_bounds_long')}} as bounds
-inner join {{ref('all_agg_derived_cutoff_long')}} as aggs
+from {{ref('IQR_bounds')}} as bounds
+inner join {{ref('train_data')}} as aggs
 on bounds.{{ var('app_event') }} = aggs.{{ var('app_event') }}
 and bounds.agg_tag = aggs.agg_tag
 order by bounds.{{ var('app_event') }}, bounds.agg_tag)
