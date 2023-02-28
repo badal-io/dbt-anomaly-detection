@@ -1,5 +1,0 @@
-packages:
-  - package: kristeligt-dagblad/dbt_ml
-    version: 0.5.2
-  - package: dbt-labs/dbt_utils
-    version: 0.8.6

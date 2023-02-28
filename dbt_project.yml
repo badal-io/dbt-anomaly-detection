@@ -100,7 +100,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   anomaly_detection:
     +materialized: view
-    example:
+    anomaly_detection:
       forecasts:
         +pre-hook:
           - "{{ create_models() }}"
