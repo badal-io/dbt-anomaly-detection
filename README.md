@@ -1,10 +1,7 @@
-Welcome to your new dbt project!
 
-### Using the starter project
+### Anomaly detection on timeseries user behaviour data
 
-Try running the following commands:
-- dbt run
-- dbt test
+Anomaly detection in user behavior data helps in identifying any abnormal or unexpected behavior patterns. This information can be used to improve data quality and resolve problems before they escalate. the goal of this package is to develop an anomaly detection framework for user behavior time-series data that is able to adapt to changing patterns and produce minimum false alerts. The framework uses BigQuery ML ARIMA Plus which takes trends and seasonality of data into account.
 
 
 ### Resources:
