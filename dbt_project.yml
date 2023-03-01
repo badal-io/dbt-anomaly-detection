@@ -2,7 +2,7 @@
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 name: 'anomaly_detection'
-version: '1.2.0'
+version: '1.0.0'
 require-dbt-version: '>=1.0.0'  # dbt This version should match the latest version in .gitlab-ci.yml
 config-version: 2
 
