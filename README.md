@@ -75,7 +75,7 @@ models:
 ```
 
 Therefore, first the create_models() macro runs which creates all ARIMA plus models. This if followed by forecasts on the prediction sets. 
-In this package, created models are various in terms of training intervals and levels of granularity. The threshold parameter in the forecasts determine the sensitivity of each timestamp data to getting detected as an anomaly. The higher the threshold, the less sensitive the model will be to anomalies. All configurations of model creation and forecasts is as follows:
+In this package, created models are various in terms of training intervals and levels of granularity. The threshold parameter in the forecasts determine the sensitivity of each timestamp data to getting detected as an anomaly. The higher the threshold, the less sensitive the model will be to anomalies. All configurations of model creation and forecasts are as follows:
 
 ``` yml
 vars:
@@ -88,4 +88,20 @@ vars:
     1mon_8hr:
       period: "8hr"
       train_interval: 60
+```
+
+#### reset_forecasts:
+Sometimes, the lower bounds of the forecasts hit negative values. This model is created to reset those negative values to a small positive count (determined by neg_lower_bound_reset). In some scenarios, no matter how high the forecast probabality threshold is tuned, the user will still get some false anomalies. The bounds_coeff variable determines the coefficient by which the user can widen the intervals between the bounds. It can be set as 1 in cases where there is no need to tweak the predicted bounds. 
+
+``` yml
+vars:
+  neg_lower_bound_reset: 2
+  bounds_coeff: 1.3
+```
+#### nonrecent_events:
+This model is created to filter on recently released data, which may have unstable trends or patterns that can make forecasts unreliable. Models are filtered on recent data by configuring recent_event_cutoff (days). 
+
+``` yml
+vars:
+  recent_event_cutoff: 30
 ```
