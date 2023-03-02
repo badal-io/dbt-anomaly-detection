@@ -29,26 +29,10 @@ vars:
   cutoff_count: 50
 ```
 
+#### train_data, IQR_quartiles, IQR_bounds, IQR_outliers:
+The Interquartile Range method is used here to detect and replace outliers in the train set. These would be beneficiary so that models will not get trained on outlier data. To detect outliers, first, train data is identified by filtering on training intervals. Then, lower and upper bounds for outliers are detected using these formula: Q1 – IQR_coeff * IQR and Q3 + IQR_coeff * IQR, where Q1 and Q3 represent the first and third quartiles of the data; IQR = Q3 - Q1; IQR_coeff determines how wide the interval between the bounds are. The higher the IQR_coeff, the wider the interval will be, thus the less sensitive the model will be to outliers in the train set. Outliers in the train set will be replaced by the bounds. 
 
-
-
-
-``` sql
-{{ config(materialized='table', tags=["data_preparation"]) }}
-
-with bounds_agg as (
-select time_stamps, bounds.{{ var('app_event') }} as {{ var('app_event') }}, bounds.agg_tag as agg_tag, event_count, LB, UB
-from {{ref('IQR_bounds')}} as bounds
-inner join {{ref('train_data')}} as aggs
-on bounds.{{ var('app_event') }} = aggs.{{ var('app_event') }}
-and bounds.agg_tag = aggs.agg_tag
-order by bounds.{{ var('app_event') }}, bounds.agg_tag)
-
-select time_stamps, {{ var('app_event') }}, agg_tag,
-case when event_count > UB then UB
-when event_count < LB then LB
-else event_count
-end as event_count
-from bounds_agg
-order by {{ var('app_event') }}, agg_tag, time_stamps
+``` yml
+vars:
+   IQR_coeff: 4.5
 ```
