@@ -13,7 +13,7 @@ Using this package is pretty straightforward. After getting dbt installed on you
 #### raw_data: 
 This model filters the data on the desired period of time.
 
-aggregations:
+#### aggregations:
 This model aggregates the count of unique identifiers within different levels of granularity. These levels of granularity can be configured in the dbt_project.yml file as follows:
 
 ``` yml
@@ -21,7 +21,7 @@ vars:
   anomaly_detection_aggregation_levels: [4, 8, 12, 24]
 ```
 
-cutoff_dates, aggregations_cutoff:
+#### cutoff_dates, aggregations_cutoff:
 The purpose of these models is to reset aggregated counts to the date when the counts surpass a minimum cutoff value. This can be helpful in scenarios where an event has not been fully released. The cutoff count can be configured as follows:
 
 ``` yml
