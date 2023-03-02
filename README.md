@@ -33,7 +33,7 @@ This model filters the data on the desired period of time. The period can be con
 ``` yml
 vars:
   data_interval: 90
-  start_date: "CURRENT_DATE()
+  start_date: "CURRENT_DATE()"
 ```
 
 #### aggregations:
