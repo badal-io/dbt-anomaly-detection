@@ -10,14 +10,16 @@ Using this package is pretty straightforward. After getting dbt installed on you
 
 ### Overview of dbt Models 
 
+raw_data: 
+This model filters the data on the desired period of time.
+
+aggregations:
+This model aggregates the count of unique identifiers within different levels of granularity. These levels of granularity can be configured in the dbt_project.yml file as follows:
+
+
 ``` yml
 vars:
   anomaly_detection_aggregation_levels: [4, 8, 12, 24]
-  anomaly_detection_prob_thresholds : [0.9999, 0.999999]
-  anomaly_detection_horizon: 120
-  anomaly_detection_forecast_interval: 10
-  anomaly_detection_holiday_region: "CA"
-  data_interval: 90
 ```
 
 ``` sql
