@@ -6,7 +6,24 @@ Anomaly detection in user behavior data helps in identifying any abnormal or une
 
 ### How to get started 
 
-Using this package is pretty straightforward. After getting dbt installed on your machine and connected to your BigQuery instance, you need to install the package and run dbt deps to make sure it is installed. 
+Using this package is pretty straightforward. After getting dbt installed on your machine and connected to your BigQuery instance, you need to install the package running dbt deps command. 
+
+The configurations of the sources.yml file can be changed as follows: 
+
+``` yml
+  # sources vars
+  source_table: sample_table_final
+  source_name: sampled_data
+```
+
+The input field names can also be altered in the dbt_project.yml file. The main three fields are: 1. collector timestamps 2. unique identifier at each timestamp 3. types of user behaviour timeseries data (such as event data, session data, conversion data, etc.)
+
+``` yml
+  # input fields
+  collector_tstamp: collector_tstamp #collector timestamps
+  event_id: event_id #unique identifiers
+  app_event: app_event #aggregation field
+```
 
 ### Overview of dbt Models 
 
@@ -36,7 +53,7 @@ vars:
 ```
 
 #### train_data, IQR_quartiles, IQR_bounds, IQR_outliers:
-The Interquartile Range method is used here to detect and replace outliers in the train set. These would be beneficiary so that models will not get trained on outlier data. To detect outliers, first, train data is identified by filtering on training intervals. Then, lower and upper bounds for outliers are detected using these formula: Q1 – IQR_coeff * IQR and Q3 + IQR_coeff * IQR, where Q1 and Q3 represent the first and third quartiles of the data; IQR = Q3 - Q1; IQR_coeff determines how wide the interval between the bounds should be. The higher the IQR_coeff, the wider the interval will be, thus the less sensitive the model will be to outliers in the train set. Outliers in the train set will be replaced by the bounds. 
+The Interquartile Range method is used here to detect and replace outliers in the train set. These would be beneficiary so that models will not get trained on outlier data. To detect outliers, first, train data is identified by filtering on training intervals (determined by anomaly_detection_forecast_interval in dbt_project.yml). Then, lower and upper bounds for outliers are detected using these formula: Q1 – IQR_coeff * IQR and Q3 + IQR_coeff * IQR, where Q1 and Q3 represent the first and third quartiles of the data; IQR = Q3 - Q1; IQR_coeff determines how wide the interval between the bounds should be. The higher the IQR_coeff, the wider the interval will be, thus the less sensitive the model will be to outliers in the train set. Outliers in the train set will be replaced by the bounds. 
 
 ``` yml
 vars:
