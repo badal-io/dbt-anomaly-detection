@@ -105,3 +105,22 @@ This model is created to filter on recently released data, which may have unstab
 vars:
   recent_event_cutoff: 30
 ```
+
+#### all_configs:
+all_configs identifies two features from the prediction set of each created ARIMA model: 1. number of anomalies 2. RMSD (Root Mean Square Deviation) of the predicted bounds 
+The ultimate goal is to dynamically choose/update the best model/config for each user behaviour data type (e.g. event data). The best model in this package is defined as the one which produces minimum number of anomalies in the prediction set. In cases where more than one model has the same minimal number of anomalies for a specifc user behaviour data type, the one with minimum RMSD is chosen. RMSD determines how wide/loose the interval between the predicted bounds are, and is a good indicator of the quality/practicality of the models. 
+
+#### nonrecent_configs, filtered_nonrecent_configs:
+Filters the configs on recent data, and any models generating NULL RMSDs. 
+
+#### min_anomalies, min_anomalies_configs
+Determines the config(s) with minimal anomalies in prediction set for each user behaviour data type (e.g. event data)
+
+#### min_RMSD, control_table
+Determines the config with minimal RMSD of the predicted bounds for each user behaviour data type. This is especially helpful when there is more than one model chosen for each user behaviour data. This provides us with a control table consisting of the data types, chosen configs (or control configs) and the corresponding features of the control config (anomalies and RMSD) 
+
+#### alerting base
+This model is the product of the join of control_table against the original forecasts, and results in the optimal forecasts for each user behaviour data type. Each timestamp data is flagged either as an anomalous or non-anomalous in this model.
+
+#### daily_alerts
+Filters only on anomalies of the day, and can be used for alerting purposes. 
