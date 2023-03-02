@@ -10,7 +10,7 @@ Using this package is pretty straightforward. After getting dbt installed on you
 
 ### Overview of dbt Models 
 
-raw_data: 
+#### raw_data: 
 This model filters the data on the desired period of time.
 
 aggregations:
