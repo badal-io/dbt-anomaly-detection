@@ -16,7 +16,7 @@ The configurations of the sources.yml file can be changed as follows:
   source_name: sampled_data
 ```
 
-The input field names can also be altered in the dbt_project.yml file. The main three fields are: 1. collector timestamps 2. unique identifier at each timestamp 3. type of user behaviour timeseries data (such as event data, session data, conversion data, etc.)
+The input field names can also be altered in the dbt_project.yml file. The main three fields are: 1. collector timestamps 2. unique identifier at each timestamp 3. type of user behaviour timeseries data (such as event data, session data, conversion data, etc.). This is the field aggregations will be grouped by. 
 
 ``` yml
   # input fields
