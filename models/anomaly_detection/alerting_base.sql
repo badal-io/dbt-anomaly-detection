@@ -2,7 +2,7 @@
   
   WITH ml_detect_updated AS (
     SELECT {{ var('app_event') }}, 
-      CONCAT(agg_tag, '_', prob_threshold, "threshold", '_', RTRIM(LTRIM(training_period, "derived_models_"), CONCAT('_', agg_tag))) AS control_config,
+      CONCAT(prob_threshold, "threshold", '_', training_period) AS control_config,
       time_stamps, event_count, is_anomaly, lower_bound, upper_bound, anomaly_probability
     FROM {{ref('reset_forecasts')}}
   )

@@ -17,9 +17,10 @@ profile: 'anomaly_detection'
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
 vars:
-  anomaly_detection_aggregation_levels: [4, 8, 12, 24]
+  anomaly_detection_aggregation_levels: [12]
   anomaly_detection_prob_thresholds : [0.9999, 0.999999]
-  anomaly_detection_horizon: 120
+  anomaly_detection_horizon: 20
+  anomaly_detection_confidence_level: 0.9
   anomaly_detection_forecast_interval: 10
   anomaly_detection_holiday_region: "CA"
   data_interval: 90
@@ -44,41 +45,14 @@ vars:
 
   #level of granularity and training interval for ML models
   models:
-    1mon_8hr:
-      period: "8hr"
-      train_interval: 60
-    2mon_24hr:
-      period: "24hr"
-      train_interval: 90
     2mon_12hr:
       period: "12hr"
       train_interval: 90
-    2mon_8hr:
-      period: "8hr"
-      train_interval: 90
-    2mon_4hr:
-      period: "4hr"
-      train_interval: 90
-    1mon_4hr:
-      period: "4hr"
-      train_interval: 60
     1mon_12hr:
       period: "12hr"
       train_interval: 60
-    1mon_24hr:
-      period: "24hr"
-      train_interval: 60
-    05mon_4hr:
-      period: "4hr"
-      train_interval: 30
-    05mon_8hr:
-      period: "8hr"
-      train_interval: 30
     05mon_12hr:
       period: "12hr"
-      train_interval: 30
-    05mon_24hr:
-      period: "24hr"
       train_interval: 30
   
 model-paths: ["models"]
