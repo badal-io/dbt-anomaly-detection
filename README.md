@@ -1,5 +1,7 @@
-<div align="left">
-  <img src="fish.png" width="1000" style="display:block;margin-left:0;">
+<div style="text-align: left;">
+  <div style="display: inline-block; width: 100%;">
+    <img src="my-image.png" width="1000" style="display: block;">
+  </div>
 </div>
 
 
