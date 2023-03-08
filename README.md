@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="fish.png" width="1000" alt="A photo of my project">
+  <img src="fish.png" width="1000" style="max-width:100%;">
 </p>
 
 
