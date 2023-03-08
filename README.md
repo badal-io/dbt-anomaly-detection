@@ -132,7 +132,7 @@ Determines the config(s) with minimal anomalies in prediction set for each user 
 #### min_RMSD, control_table
 Determines the config with minimal RMSD of the predicted bounds for each user behaviour data type. This is especially helpful when there is more than one model chosen for each user behaviour data. This provides us with a control table consisting of the data types, chosen configs (or control configs) and the corresponding features of the control config (anomalies and RMSD) 
 
-#### alerting base
+#### alerting_base
 This model is the product of the join of control_table against the original forecasts, and results in the optimal forecasts for each user behaviour data type. Each timestamp data is flagged either as an anomalous or non-anomalous in this model.
 
 #### daily_alerts
