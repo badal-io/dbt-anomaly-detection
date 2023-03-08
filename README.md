@@ -1,4 +1,7 @@
-![A photo of my project](fish.png)
+<p align="left">
+  <img src="fish.png" width="400" alt="A photo of my project">
+</p>
+
 
 ### Anomaly detection on timeseries user behaviour data
 
