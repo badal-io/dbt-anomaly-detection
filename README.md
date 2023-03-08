@@ -1,3 +1,4 @@
+![A photo of my project](fish.png)
 
 ### Anomaly detection on timeseries user behaviour data
 
