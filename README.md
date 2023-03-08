@@ -66,7 +66,7 @@ $Q3 + \text{IQR}_{\text{coeff}} \times \text{IQR}$
 
 Where Q1 and Q3 represent the first and third quartiles of the data; 
 $\text{IQR} = Q3 - Q1$;
-$\text{IQR}_{\text{coeff}}$ determines how wide the interval between the bounds should be. The higher the $\text{IQR}_{\text{coeff}}$, the wider the interval will be, thus the less sensitive the model will be to outliers in the train set. Outliers in the train set will be replaced by the bounds. 
+$(IQR)_{coeff}$ determines how wide the interval between the bounds should be. The higher the $(IQR)_{coeff}$, the wider the interval will be, thus the less sensitive the model will be to outliers in the train set. Outliers in the train set will be replaced by the bounds.
 
 ``` yml
 vars:
