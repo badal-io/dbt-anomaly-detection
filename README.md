@@ -60,6 +60,7 @@ vars:
 
 #### train_data, IQR_quartiles, IQR_bounds, IQR_outliers:
 The Interquartile Range method is used here to detect and replace outliers in the train set. These would be beneficiary so that models will not get trained on outlier data. To detect outliers, first, train data is identified by filtering on training intervals (determined by anomaly_detection_forecast_interval in dbt_project.yml). Then, lower and upper bounds for outliers are detected using these formula: 
+
 $Q1 - \text{IQR}_{\text{coeff}} \times \text{IQR}$
 
 $Q3 + \text{IQR}_{\text{coeff}} \times \text{IQR}$
