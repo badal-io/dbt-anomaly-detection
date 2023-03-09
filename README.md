@@ -7,7 +7,7 @@
 ### Anomaly detection on timeseries user behaviour data
 
 Anomaly detection in user behavior data helps in identifying any abnormal or unexpected behavior patterns. This information can be used to improve data quality and resolve problems before they escalate. The goal of this package is to develop an anomaly detection framework for user behavior time-series data that is able to adapt to changing patterns and produce minimum false alerts. The framework uses BigQuery ML ARIMA Plus which takes trends and seasonality of data into account.
-For reading more on the topic, and a step-by-step example on Google Analytics events, please refer to this Medium blog: https://medium.com/badal-io
+For reading more on the topic, and a step-by-step example on Google Analytics events, please refer to [this Medium blog](https://medium.com/badal-io)
 
 
 ### How to get started 
