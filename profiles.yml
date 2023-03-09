@@ -1,0 +1,9 @@
+anomaly_detection:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      project: ld-snowplow
+      dataset: snowplow
+      method: oauth
+      threads: 4

@@ -3,6 +3,8 @@ version: '1.0.0'
 require-dbt-version: '>=1.0.0'
 config-version: 2
 
+profile: 'anomaly_detection'
+
 vars:
   anomaly_detection_aggregation_levels: [4, 8, 12, 24]
   anomaly_detection_prob_thresholds : [0.9999, 0.999999]
