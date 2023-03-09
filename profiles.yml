@@ -4,6 +4,6 @@ anomaly_detection:
     dev:
       type: bigquery
       project: ld-snowplow
-      dataset: snowplow
+      dataset: dbt_anomaly_detection
       method: oauth
       threads: 4

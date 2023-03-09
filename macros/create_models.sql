@@ -17,7 +17,7 @@
           {{ var('app_event') }},
           agg_tag
         FROM
-          `ld-snowplow`.`dbt_anomaly_detection`.`IQR_outliers`
+          `ld-snowplow`.`dbt_anomaly_detection`.`feedbacked_train`
         WHERE
           DATE(time_stamps) >= DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('models')[model]['train_interval'] }} DAY)
           AND DATE(time_stamps) < DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('anomaly_detection_forecast_interval') }} DAY)

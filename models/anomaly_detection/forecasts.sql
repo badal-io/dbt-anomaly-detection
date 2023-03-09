@@ -2,7 +2,7 @@
 
 {{ config(materialized='table', tags=["modelling"]) }}
 
--- depends_on: {{ ref('IQR_outliers') }}
+-- depends_on: {{ ref('feedbacked_train') }}
 
 
   WITH test_set AS (
