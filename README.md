@@ -1,7 +1,13 @@
+<div style="text-align: left;">
+  <div style="display: inline-block; width: 100%;">
+    <img src="fish.png" width="1000" style="display: block;">
+  </div>
+</div>
 
 ### Anomaly detection on timeseries user behaviour data
 
 Anomaly detection in user behavior data helps in identifying any abnormal or unexpected behavior patterns. This information can be used to improve data quality and resolve problems before they escalate. The goal of this package is to develop an anomaly detection framework for user behavior time-series data that is able to adapt to changing patterns and produce minimum false alerts. The framework uses BigQuery ML ARIMA Plus which takes trends and seasonality of data into account.
+For reading more on the topic, and a step-by-step example implemented on Google Analytics events, please visit [this Medium blog](https://medium.com/badal-io).
 
 
 ### How to get started 
@@ -53,7 +59,15 @@ vars:
 ```
 
 #### train_data, IQR_quartiles, IQR_bounds, IQR_outliers:
-The Interquartile Range method is used here to detect and replace outliers in the train set. These would be beneficiary so that models will not get trained on outlier data. To detect outliers, first, train data is identified by filtering on training intervals (determined by anomaly_detection_forecast_interval in dbt_project.yml). Then, lower and upper bounds for outliers are detected using these formula: Q1 – IQR_coeff * IQR and Q3 + IQR_coeff * IQR, where Q1 and Q3 represent the first and third quartiles of the data; IQR = Q3 - Q1; IQR_coeff determines how wide the interval between the bounds should be. The higher the IQR_coeff, the wider the interval will be, thus the less sensitive the model will be to outliers in the train set. Outliers in the train set will be replaced by the bounds. 
+The Interquartile Range method is used here to detect and replace outliers in the train set. These would be beneficiary so that models will not get trained on outlier data. To detect outliers, first, train data is identified by filtering on training intervals (determined by anomaly_detection_forecast_interval in dbt_project.yml). Then, lower and upper bounds for outliers are detected using these formula respectively: 
+
+$Q1 - \text{IQR}_{\text{coeff}} \times \text{IQR}$
+
+$Q3 + \text{IQR}_{\text{coeff}} \times \text{IQR}$
+
+Where Q1 and Q3 represent the first and third quartiles of the data; 
+$\text{IQR} = Q3 - Q1$;
+IQR_coeff determines how wide the interval between the bounds should be. The higher the IQR_coeff, the wider the interval will be, thus the less sensitive the model will be to outliers in the train set. Outliers in the train set will be replaced by the bounds.
 
 ``` yml
 vars:
@@ -119,7 +133,7 @@ Determines the config(s) with minimal anomalies in prediction set for each user 
 #### min_RMSD, control_table
 Determines the config with minimal RMSD of the predicted bounds for each user behaviour data type. This is especially helpful when there is more than one model chosen for each user behaviour data. This provides us with a control table consisting of the data types, chosen configs (or control configs) and the corresponding features of the control config (anomalies and RMSD) 
 
-#### alerting base
+#### alerting_base
 This model is the product of the join of control_table against the original forecasts, and results in the optimal forecasts for each user behaviour data type. Each timestamp data is flagged either as an anomalous or non-anomalous in this model.
 
 #### daily_alerts
