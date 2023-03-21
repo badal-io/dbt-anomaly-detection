@@ -1,4 +1,5 @@
 {{ config(materialized='table', tags=["config_selection"]) }}
+-- depends_on: {{ ref('alerting_predictions_adj') }}
 
 with empty_table as (
     select
