@@ -82,3 +82,19 @@ models:
       forecasts:
         +pre-hook:
           - "{{ create_models() }}"
+
+seeds:
+  anomaly_detection:
+    +column_types:
+      time_stamps: TIMESTAMP
+      app_event: STRING
+      control_config: STRING
+      anomalies: INT64
+      RMSD_prcnt: FLOAT64
+      event_count: FLOAT64
+      forecast_value: FLOAT64
+      lower_bound: FLOAT64
+      upper_bound: FLOAT64
+      anomaly_probability: FLOAT64
+      is_anomaly: BOOLEAN
+      surrogate_key: STRING

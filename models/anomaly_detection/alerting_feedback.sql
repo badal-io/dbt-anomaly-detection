@@ -1,11 +1,10 @@
 {{ config(materialized='table', tags=["config_selection"]) }}
--- depends_on: {{ ref('alerting_predictions_adj') }}
 
 with empty_table as (
     select
         cast(null as TIMESTAMP) as time_stamps,
-        null as app_event,
-        null as control_config,
+        cast (null as string) app_event,
+        cast (null as string) control_config,
         cast(null as int) as anomalies,
         cast(null as float64) as RMSD_prcnt,
         cast(null as float64) as event_count,
