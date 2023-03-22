@@ -4,7 +4,7 @@
 with empty_table as (
     select
         cast(null as TIMESTAMP) as time_stamps,
-        null as app_event,
+        cast(null as string) as app_event,
         null as control_config,
         cast(null as int) as anomalies,
         cast(null as float64) as RMSD_prcnt,
