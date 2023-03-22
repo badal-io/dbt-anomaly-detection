@@ -1,10 +1,13 @@
-{{ config(materialized='table', tags=["config_selection"]) }}
+{{ config(
+   materialized='incremental',
+   tags=["config_selection"]
+) }}
 
 with empty_table as (
     select
         cast(null as TIMESTAMP) as time_stamps,
-        cast (null as string) app_event,
-        cast (null as string) control_config,
+        cast(null as string) as app_event,
+        cast(null as string) as control_config,
         cast(null as int) as anomalies,
         cast(null as float64) as RMSD_prcnt,
         cast(null as float64) as event_count,
@@ -13,6 +16,7 @@ with empty_table as (
         cast(null as float64) as upper_bound,
         cast(null as float64) as anomaly_probability,
         cast(null as boolean) as is_anomaly,
+        cast(null as string) as surrogate_key,
         cast(null as int) as feedback_flag     
 )
 

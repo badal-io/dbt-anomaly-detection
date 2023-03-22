@@ -13,7 +13,7 @@
   FROM
     {{ref('IQR_outliers')}} AS new_train_set
   LEFT JOIN
-    {{ref('bquxjob_alerting_feedback')}} AS historical_feedback
+    {{ref('alerting_feedback')}} AS historical_feedback
   ON
     new_train_set.time_stamps = historical_feedback.time_stamps
     AND new_train_set.app_event = historical_feedback.app_event 
