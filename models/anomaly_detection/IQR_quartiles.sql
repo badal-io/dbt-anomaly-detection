@@ -1,4 +1,4 @@
-{{ config(materialized='table', tags=["data_preparation"]) }}
+{{ config(materialized='ephemeral', tags=["data_preparation"]) }}
 
 select   ARRAY(SELECT x FROM UNNEST(output) AS x WITH OFFSET
   WHERE OFFSET BETWEEN 1 AND ARRAY_LENGTH(output) - 2) as output, 

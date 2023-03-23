@@ -1,4 +1,4 @@
-{{ config(materialized='table', tags=["config_selection"]) }}
+{{ config(materialized='ephemeral', tags=["config_selection"]) }}
   
   WITH ml_detect_updated AS (
     SELECT {{ var('app_event') }}, 

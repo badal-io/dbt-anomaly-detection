@@ -1,4 +1,4 @@
-{{ config(materialized='table', tags=["config_selection"]) }}
+{{ config(materialized='ephemeral', tags=["config_selection"]) }}
 
 SELECT configs.{{ var('app_event') }}, configs.control_config, 
     configs.anomalies, configs.RMSD_prcnt

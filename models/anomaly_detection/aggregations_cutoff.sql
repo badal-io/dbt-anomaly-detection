@@ -1,4 +1,4 @@
-{{ config(materialized='table', tags=["data_preparation"]) }}
+{{ config(materialized='ephemeral', tags=["data_preparation"]) }}
 
 select time_stamps, {{ var('app_event') }}, agg_tag, event_count
 from(

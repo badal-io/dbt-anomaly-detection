@@ -1,4 +1,4 @@
-{{ config(materialized='table', tags=["data_preparation"]) }}
+{{ config(materialized='ephemeral', tags=["data_preparation"]) }}
 
 select *
 from {{ref('aggregations_cutoff')}}

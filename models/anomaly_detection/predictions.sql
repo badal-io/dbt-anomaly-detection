@@ -1,6 +1,6 @@
 -- 3 periods of training * 2 probabality threshold * 4 aggregation levels
 
-{{ config(materialized='table', tags=["modelling"]) }}
+{{ config(materialized='ephemeral', tags=["modelling"]) }}
 
 -- depends_on: {{ ref('forecasts') }}
 

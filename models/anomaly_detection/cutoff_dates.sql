@@ -1,4 +1,4 @@
-{{ config(materialized='table', tags=["data_preparation"]) }}
+{{ config(materialized='ephemeral', tags=["data_preparation"]) }}
 
 select agg_tag, {{ var('app_event') }}, min(time_stamps) as strt_time
 from {{ref('aggregations')}}

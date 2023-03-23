@@ -1,4 +1,4 @@
-{{ config(materialized='table', tags=["data_preparation"]) }}
+{{ config(materialized='ephemeral', tags=["data_preparation"]) }}
 
 with bounds_agg as (
 select time_stamps, bounds.{{ var('app_event') }} as {{ var('app_event') }}, bounds.agg_tag as agg_tag, event_count, LB, UB
