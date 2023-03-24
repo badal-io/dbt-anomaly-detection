@@ -25,7 +25,7 @@ vars:
   anomaly_detection_holiday_region: "CA"
   data_interval: 90
 
-  start_date: "\"2023-02-09\""
+  # start_date: "\"2023-02-09\""
   # start_date: "CURRENT_DATE()"
 
   IQR_coeff: 4.5

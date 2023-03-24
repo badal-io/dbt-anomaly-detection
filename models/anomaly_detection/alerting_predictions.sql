@@ -1,4 +1,4 @@
-{{ config(materialized='ephemeral', tags=["config_selection"]) }}
+{{ config(materialized='table', tags=["config_selection"]) }}
 
 
 with source_data as (
