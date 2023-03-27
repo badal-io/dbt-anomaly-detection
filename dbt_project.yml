@@ -27,6 +27,7 @@ vars:
 
   # start_date: "\"2023-02-09\""
   # start_date: "CURRENT_DATE()"
+  start_date:
 
   IQR_coeff: 4.5
   cutoff_count: 50

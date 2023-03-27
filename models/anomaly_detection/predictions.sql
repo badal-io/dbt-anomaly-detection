@@ -14,7 +14,7 @@
         FROM
           {{ ref('aggregations_cutoff') }}
         WHERE
-        DATE(time_stamps) >= DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('anomaly_detection_forecast_interval') }} DAY)
+        DATE(time_stamps) >= DATE_SUB(PARSE_DATE("%Y-%m-%d", "{{ var('start_date') }}"), INTERVAL {{ var('anomaly_detection_forecast_interval') }} DAY)
   )
 
       {% for model in var('models') %}

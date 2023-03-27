@@ -19,8 +19,8 @@
         FROM
           `{{ target.database }}`.`{{ target.schema }}`.`feedbacked_train`
         WHERE
-          DATE(time_stamps) >= DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('models')[model]['train_interval'] }} DAY)
-          AND DATE(time_stamps) < DATE_SUB({{ var('start_date') }}, INTERVAL {{ var('anomaly_detection_forecast_interval') }} DAY)
+          DATE(time_stamps) >= DATE_SUB(PARSE_DATE("%Y-%m-%d", "{{ var('start_date') }}"), INTERVAL {{ var('models')[model]['train_interval'] }} DAY)
+          AND DATE(time_stamps) < DATE_SUB(PARSE_DATE("%Y-%m-%d", "{{ var('start_date') }}"), INTERVAL {{ var('anomaly_detection_forecast_interval') }} DAY)
           AND agg_tag = "{{ var('models')[model]['period'] }}"
       );
 
