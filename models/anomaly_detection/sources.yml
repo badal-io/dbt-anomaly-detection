@@ -2,6 +2,6 @@ version: 2
 
 sources:
  - name: sampled_data
-   schema: dbt_rhashemi
+   schema: dbt_anomaly_detection
    tables:
-     - name: sample_table_final
+     - name: aggregations_mock
