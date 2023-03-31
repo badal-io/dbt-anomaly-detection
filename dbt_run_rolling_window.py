@@ -6,7 +6,7 @@ def daterange(start_date, end_date):
         yield start_date + datetime.timedelta(n)
 
 def main():
-    start_date = datetime.date(2023, 1, 29)
+    start_date = datetime.date(2023, 1, 30)
     end_date = datetime.date(2023, 2, 9)
 
     for date in daterange(start_date, end_date):
