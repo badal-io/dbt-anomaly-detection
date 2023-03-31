@@ -3,7 +3,7 @@
 select time_stamps, {{ var('app_event') }}, agg_tag, event_count
 from(
 select time_stamps, strt_time, main.{{ var('app_event') }}, main.agg_tag, event_count
-from {{ref('aggregations')}} as main
+from {{source(var('source_name'), var('source_table'))}} as main
 inner join {{ref('cutoff_dates')}} as cutoff
 on main.agg_tag = cutoff.agg_tag
 and main.{{ var('app_event') }} = cutoff.{{ var('app_event') }}

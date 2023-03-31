@@ -11,7 +11,7 @@
   END
     AS event_count
   FROM
-    {{ref('IQR_outliers')}} AS new_train_set
+    {{ref('train_data')}} AS new_train_set
   LEFT JOIN
     {{ref('alerting_feedback')}} AS historical_feedback
   ON
