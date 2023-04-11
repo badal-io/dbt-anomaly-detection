@@ -1,6 +1,6 @@
 <div style="text-align: left;">
   <div style="display: inline-block; width: 100%;">
-    <img src="fish.png" width="1000" style="display: block;">
+    <img src="image.png" width="1000" style="display: block;">
   </div>
 </div>
 
